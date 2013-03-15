@@ -3,12 +3,34 @@
 <html>
 
 <head>
-	<title>{{ page.title }}</title>
+	<title>{{site.title}} - {{ page.title }}</title>
+
+	<link rel="stylesheet" type="text/css" href="/styles/site.css">
+	<link rel="stylesheet" type="text/css" href="/styles/gist.css">
+
 </head>
 
 <body>
+<div id="h4x"></div>
 
-<h1>{{ page.title }}</h1>
+<h1 id="main-header">
+	<a href="/">{{site.title}} / {{ page.title }}</a>
+
+</h1>
+
+<nav id="main-nav">
+	<ul id="site-pages">
+	{% for p in site.pages %}
+		{% capture hack %}{{ p.url | truncate:8 }}{% endcapture %}
+		{% if hack != '/page...' %}
+		<li> <a href="{{p.url}}">{{ p.title }}</a> </li>
+		{% endif %}
+	{% endfor %}
+	</ul>
+
+	{% include links.htm %}	
+
+</nav>
 
 
 <div id="main-content">
@@ -18,8 +40,8 @@
 </div>
 
 
-<footer>
-
+<footer id="main-footer">
+{% include footer.htm %}
 </footer>
 
 </body>

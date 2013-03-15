@@ -1,0 +1,206 @@
+
+body,html {
+	margin:0;
+	padding:0;
+}
+
+html {
+	background:#001737;
+	color:white;
+	font-size:1.2em;
+}
+
+body,#h4x {
+	width:80%;
+	margin:0 auto;
+	border-right:20px solid #CFE3FF;
+	border-top:1px solid white;
+	margin-top:-1px
+}
+#h4x {
+	position:fixed;
+	height:100%;
+	z-index:-99;
+}
+
+body:after {
+	content:"";
+	display:block;
+	clear:both;
+}
+
+a {
+	color:#93DDF0;
+}
+
+a:hover {
+	color:white;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color:#93DDF0;
+	margin:0;
+	margin-top:1em;
+}
+
+h1,h2,h3 {
+	font-weight:normal;
+}
+
+h2 {
+	font-size:1.7em;
+}
+
+h3 {
+	font-size:1.5em;
+}
+
+h4,h5,h6 {
+	margin-top:2em;
+	font-weight:bold;
+	font-size:1.3em;
+}
+
+code {
+	border:5px solid #001737;
+	background:#CFE3FF;
+	color:black;
+	display:block;
+	padding:0.5em 1ex;
+	overflow:auto;
+}
+
+img {
+	border: 5px solid #001737;
+}
+
+#main-header {
+	text-align:right;
+	margin-top:0;
+	position:fixed;
+	font-size:1.5em;
+	height:3em;
+	width:80%;
+	background:#001737;
+	border-bottom:0.33333em solid #001737;
+	top:0;
+}
+#main-header a {
+	text-decoration:none;
+	position:absolute;
+	bottom:0;
+	right:2ex;
+}
+
+#main-nav {
+	width:20%;
+	position:fixed;
+	top:5em;
+}
+
+/* Do not bullet point lists of links */
+#main-nav ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+#main-nav h2 {
+	font-size:1.2em;
+	text-align: right;
+	margin-right:2ex;
+}
+
+#main-footer {
+	position:fixed;
+	width:20%;
+	bottom:1em;
+	margin-left:-1ex;
+	text-align:center;
+}
+
+
+#main-nav a:first-child {
+	margin-top:0;
+}
+
+#main-nav a {
+	display:block;
+	text-decoration:none;
+	background:#002962;
+	padding:0.5em 1ex;
+	margin:0.2em 0;
+	margin-right:1ex;
+}
+
+#main-nav a:hover {
+	background:#234A80;
+}
+
+#main-nav a:visited {
+	color:#cccccc;
+}
+
+#main-content {
+	background:#002962;
+	padding:1em 2.5%;
+	float:right;
+	width:70%;
+	margin-top:5em;
+}
+
+
+.pagination {
+	text-align:center;
+}
+
+a.older {
+	float:left;
+}
+
+a.older:before {
+	content:"< ";
+}
+
+a.newer {
+	float:right;
+}
+
+a.newer:after {
+	content:" >";
+}
+
+
+
+@media screen and (max-width:100ex) {
+
+	body,#h4x {
+		width:auto;
+		margin:0 3ex;
+	}
+
+	#h4x {
+		right:0;
+	}
+
+	#main-nav,#main-footer,#main-header {
+		position:relative;
+		top:0; left:0;
+		width:auto;
+	}
+
+	#main-nav a {
+		margin-right:0 !important;
+	}
+
+	#main-content {
+		float:none;
+		width:auto;
+		margin-top:0;
+	}
+
+	#main-footer {
+		padding:1em;
+		text-align:center;
+	}
+}
