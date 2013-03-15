@@ -209,6 +209,7 @@ a.newer:after {
 
 	#main-header {
 		height:auto;
+		padding-top:1em;
 	}
 
 	#main-header a {
