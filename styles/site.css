@@ -210,6 +210,7 @@ a.newer:after {
 	#main-header {
 		height:auto;
 		padding-top:1em;
+		padding-right:2ex;
 	}
 
 	#main-header a {
