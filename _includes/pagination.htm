@@ -7,7 +7,15 @@
   	{% endif %}
   {% endif %}
 
-  <span class="page_number ">Page: {{paginator.page}} of {{paginator.total_pages}}</span>
+  {% capture  pgxofy %}
+  <span class="page_number ">{{paginator.page}} of {{paginator.total_pages}}</span>
+  {% endcapture %}
+
+  {% if paginator.previous_page  %}
+    {{pgxofy}}
+  {% elsif paginator.next_page %}
+    {{pgxofy}}
+  {% endif %}
 
   {% if paginator.next_page %}
     <a href="/page{{paginator.next_page}}" class="older ">older</a>
