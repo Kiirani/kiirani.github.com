@@ -79,12 +79,19 @@ h4,h5,h6 {
 }
 
 code {
+	display:inline-block;
+	padding:0.1ex 0.5ex;
+	margin:0 0.5ex;
+	background:#CFE3FF;
+	color:black;
+}
+
+pre {
+	overflow:auto;
+	padding:0.5em 1ex;
 	border:5px solid #001737;
 	background:#CFE3FF;
 	color:black;
-	display:block;
-	padding:0.5em 1ex;
-	overflow:auto;
 }
 
 img {
