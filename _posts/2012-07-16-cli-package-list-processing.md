@@ -1,6 +1,7 @@
 ---
 title: Some commandline package list processing
 layout: post
+tags: bash arch pacman
 ---
 
 This seems to come up a lot for me. I'm sure I'm the only person in the world, though.

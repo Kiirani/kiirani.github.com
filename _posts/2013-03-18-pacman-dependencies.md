@@ -1,6 +1,7 @@
 ---
 title: (pacman) resolving missing dependencies
 layout: post
+tags: bash arch pacman 
 ---
 
 I was in dependency hell on my last system update. I'm impatient, so I resolve dependency hell by bypassing dependency checks altogether.
@@ -44,9 +45,7 @@ This list can then be piped into pacman :
 {% highlight bash %}
 # testdb | cut -d: -f2 | sed s"/ //g" | pacman -S -
 {% endhighlight %}
-
 <br><br>
-
 But for me, this doesn't end here.
 
 The reason I ran an -Sdd in the first place was I have some weird dependency conflicts between mesa-libgl and my nvidia drivers, and I can't be bothered fixing those right now. 
@@ -58,7 +57,5 @@ for line in `testdb | cut -d: -f2 | sed s"/ //g"`; do
     pacman -S $line
 done;
 {% endhighlight %}
-
 <br><br>
-
 Okay, so, I'm still left in dependency hell with libgl, but most of my system functions and my bash-fu is stronger.

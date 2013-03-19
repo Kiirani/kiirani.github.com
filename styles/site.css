@@ -68,6 +68,11 @@ h2 {
 	font-size:1.7em;
 }
 
+
+.subhead {
+	margin-top:0;
+}
+
 h3 {
 	font-size:1.5em;
 }
@@ -96,6 +101,10 @@ pre {
 
 img {
 	border: 5px solid #001737;
+}
+
+footer {
+	color: #ccc;
 }
 
 #main-header {
@@ -201,8 +210,14 @@ a.newer:after {
 	content:" >";
 }
 
-.post {
+#posts .post {
 	margin-bottom:5em;
+}
+
+.post:after {
+	content:'';
+	display:block;
+	clear:both;
 }
 
 .post header a {
@@ -211,8 +226,10 @@ a.newer:after {
 
 
 #comments {
+	clear:both;
 	margin:0 -3.5%;
 	margin-bottom:-1em;
+	margin-top:2em;
 	padding:0.5em 1ex;
 	background:#001737;
 }
@@ -225,6 +242,30 @@ a.newer:after {
 
 .commentsLink:after {
 	content:"  >";
+}
+
+
+#related {
+	float:left;
+	width:60%;
+	margin-right:10%;
+	margin-bottom:2em;
+}
+
+#tags {
+	float:left;
+	width:30%;
+	margin-bottom:2em;
+}
+
+#related:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+#related a {
+	display:block;
+	margin-right:1em;
 }
 
 @media screen and (max-width:100ex) {
