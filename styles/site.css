@@ -210,6 +210,22 @@ a.newer:after {
 }
 
 
+#comments {
+	margin:0 -3.5%;
+	margin-bottom:-1em;
+	padding:0.5em 1ex;
+	background:#001737;
+}
+
+
+.commentsLink {
+	display:block;
+	float:right;
+}
+
+.commentsLink:after {
+	content:"  >";
+}
 
 @media screen and (max-width:100ex) {
 
@@ -251,5 +267,10 @@ a.newer:after {
 	#main-footer {
 		padding:1em;
 		text-align:center;
+	}
+
+	#comments {
+		margin:0 -2.6%;
+		margin-bottom:-1em;
 	}
 }
