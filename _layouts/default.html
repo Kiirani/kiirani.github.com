@@ -9,6 +9,8 @@
 	<link rel="stylesheet" type="text/css" href="/styles/syntax.css">
 	<link rel="stylesheet" type="text/css" href="/styles/gist.css">
 
+	<link rel="alternate" type="application/rss+xml" title="kiirani.com rss feed" href="/feed.xml">
+
 	<meta name="viewport" content="width=640" />
 
 </head>
@@ -24,8 +26,7 @@
 <nav id="main-nav">
 	<ul id="site-pages">
 	{% for p in site.pages %}
-		{% capture hack %}{{ p.url | truncate:8 }}{% endcapture %}
-		{% if hack != '/page...' %}
+		{% if p.layout == "default" %}
 		<li> <a href="{{p.url}}">{{ p.title }}</a> </li>
 		{% endif %}
 	{% endfor %}
