@@ -91,6 +91,7 @@ code {
 	color:black;
 }
 
+
 pre {
 	overflow:auto;
 	padding:0.5em 1ex;
@@ -115,6 +116,12 @@ img.right {
 	margin-top:1em;
 	margin-bottom:1em;
 	margin-left:1em;
+}
+
+
+.fit {
+	max-width:100%;
+	max-height:100%;
 }
 
 footer {
