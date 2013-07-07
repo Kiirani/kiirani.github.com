@@ -1,10 +1,15 @@
 ---
 title: I am in internet hell
 layout: post
+tags: life
 ---
 
-I'm moving in a month. Before they move my worldly goods, the relocation company has to assess the location where they'll be picking my stuff up from, and the volume of stuff they'll be picking up.  My tiny apartment is not going to be an appropriate place from which to relocate internationally, so I've moved everything to my parents' place. Including myself.
+I'm moving in a month.
 
+Before they move my worldly goods, the relocation company has to assess the location where they'll be picking my stuff up from, and the volume of stuff they'll be picking up.<br>
+My tiny apartment is not going to be an appropriate place from which to relocate internationally, so I've moved everything to my parents' place. 
+
+Including myself.<br>
 I got here yesterday afternoon, with my things and my computer. Setting that up is doublepluspriority, because I need to use it to work on Monday.
 
 ### Internet Hell: Problem 1 ###
@@ -34,29 +39,31 @@ I shut down the machine and that hangs too, trying to shut off apache, ntpd and 
 
 I hop onto windows 7 and try to connect to the network from there. 
 
-I get into negotiations with the router and... Actually no, to its credit the windows drivers for the wireless card managed to create some form of nonfunctioning unidentifiable connection monster for windows to claim that I was connected to...  I suppose that's a better fail case than half the machine freezing up and dying. 
+I get into negotiations with the router and... Actually no, to its credit the windows drivers for the wireless card managed to create **some form of nonfunctioning unidentifiable connection monster** for windows to claim that I was connected to...  I suppose that's a better fail case than half the machine freezing up and dying. 
 
-By this point I've decided that my little USB wireless adapter has been damaged in the 10 minutes of transit and is malfunctioning. 
+By this point I've decided that my little USB wireless adapter has been damaged in the 10 minutes of transit and is malfunctioning at a hardware level.... 
 
 It's sleep time, so I'll research a new one in the morning.
 
 
 ### Internet Hell: Problem 3 ###
 
-Hopped out of bed this morning and straight onto my laptop to see what I can get in the market of USB wifi dongles, in person, on a Sunday afternoon.
+Hopped out of bed this morning and straight onto my laptop to see what I can get in the market of USB wifi dongles, in person, on a Sunday afternoon. In New Zealand.  Heh.
 
-Every couple of minutes, had my connection to the router die on me. Die on me as in, the laptop still thinks I'm connected, the router's still taking new connections, but **nothing works anymore**
+Now my connection to the router is dying on me every couple of minutes. 
+
+Dying on me as in, the laptop still thinks I'm connected, the router's still taking new connections, but **nothing works anymore.**
 
 Okay so this one was just [interference from another local wireless network](http://unix.stackexchange.com/a/38145). Changed channel, everything's fine.
 
 
 ### Internet Hell: Problem 4 ###
 
-> Hysterical Laughter
+*Hysterical Laughter*
 
-I went down to pbetch and picked up another asus wifi dongle.
+I went down to pbtech and picked up another asus wifi dongle.
 
-I don't know why I got another one of these; the one that just broke is a usb-n13, and the drivers for it [cause kernel panics](https://bbs.archlinux.org/viewtopic.php?pid=1124701) in kernel > 3.3
+I don't know why I got another one of these; **the one that just broke is an asus usb-n13, and the drivers for it [cause kernel panics](https://bbs.archlinux.org/viewtopic.php?pid=1124701) in kernels > 3.3**
 
 I think I'm just a sucker for wireless cards that come with a linux driver on a disc in the box, so I don't have to run a twenty metre cable to the box to download drivers.
 

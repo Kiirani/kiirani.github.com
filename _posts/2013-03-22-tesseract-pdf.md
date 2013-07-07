@@ -71,7 +71,7 @@ If we re-convert that at 300dpi, the result... actually comes out in English. Mo
     % convert -density 300 file.pdf -depth 8 file.tiff  
     % tesseract file.tiff output
 
-<br><br><br>
+    
 So, **steps to read a PDF document with tesseract**:
 
 1. Convert the PDF document to something else 
