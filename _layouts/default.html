@@ -26,8 +26,11 @@
 <nav id="main-nav">
 	<ul id="site-pages">
 	{% for p in site.pages %}
+		{% capture hack %}{{ p.url | truncate:8 }}{% endcapture %}
+		{% if hack != '/page...' %}
 		{% if p.layout == "default" %}
 		<li> <a href="{{p.url}}">{{ p.title }}</a> </li>
+		{% endif %}
 		{% endif %}
 	{% endfor %}
 	</ul>
