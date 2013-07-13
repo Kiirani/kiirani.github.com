@@ -6,3 +6,6 @@ name: kiirani.com/blag
 description: kiirani's blag
 url: http://kiirani.com/
 
+
+tag_page_layout: tag_page
+tag_page_dir: tag

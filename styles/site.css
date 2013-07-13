@@ -1,3 +1,6 @@
+@import url('/styles/tagcloud.css');
+
+
 @font-face {
 	font-family: Junction;
 	src: url('/fonts/junction.ttf');
@@ -206,6 +209,36 @@ footer {
 	margin-top:5em;
 }
 
+#main-content>:first-child {
+	margin-top:0;
+}
+
+
+.tags {
+	font-style:italic;
+}
+
+.postlist {
+	list-style:none;
+	margin:1em 0; 
+	padding:0;
+}
+.postlist li * {
+	display:inline-block;
+}
+.postlist li:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+.postlist time {
+	width:12ex;
+}
+
+.postlist .tags {
+	float:right;
+	opacity:0.4;
+}
 
 .pagination {
 	text-align:center;
