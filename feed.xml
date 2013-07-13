@@ -1,0 +1,340 @@
+<!-- https://github.com/snaptortoise/jekyll-rss-feeds -->
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>kiirani.com/blag</title>
+<description>kiirani's blag</description>
+<link>http://kiirani.com/</link>
+<atom:link href="http://kiirani.com//feed.xml" rel="self" type="application/rss+xml" />
+
+<item>
+<title>arrrrrrgggghhhh</title>
+<description>&lt;p&gt;that feeling you get when a new thing almost, almost works&amp;#8230;. you get it right up to the point of working, and for some reason can&amp;#8217;t bring it over the last hurdle&lt;/p&gt;
+
+&lt;p&gt;finally, in sheer frustration, you plug in the old thing. the fubared thing. the thing that was breaking everything a few short hours ago&lt;/p&gt;
+
+&lt;p&gt;and it works&lt;/p&gt;
+
+&lt;p&gt;IT JUST GOES NOW&lt;/p&gt;
+
+&lt;p&gt;I need a stiff drink.&lt;/p&gt;</description>
+<pubDate>Mon, 08 Jul 2013 08:57:00 +1200</pubDate>
+<link>http://kiirani.com//2013/07/08/asdfgh.html</link>
+<guid isPermaLink="true">http://kiirani.com//2013/07/08/asdfgh.html</guid>
+</item>
+
+<item>
+<title>I am in internet hell</title>
+<description>&lt;p&gt;I&amp;#8217;m moving in a month.&lt;/p&gt;
+
+&lt;p&gt;Before they move my worldly goods, the relocation company has to assess the location where they&amp;#8217;ll be picking my stuff up from, and the volume of stuff they&amp;#8217;ll be picking up.&lt;br /&gt; My tiny apartment is not going to be an appropriate place from which to relocate internationally, so I&amp;#8217;ve moved everything to my parents&amp;#8217; place.&lt;/p&gt;
+
+&lt;p&gt;Including myself.&lt;br /&gt; I got here yesterday afternoon, with my things and my computer. Setting that up is doublepluspriority, because I need to use it to work on Monday.&lt;/p&gt;
+
+&lt;h3 id=&#39;internet_hell_problem_1&#39;&gt;Internet Hell: Problem 1&lt;/h3&gt;
+
+&lt;p&gt;Enter Internet Satan, stage left.&lt;/p&gt;
+
+&lt;p&gt;First up, the router is at the other end of the house. This shouldn&amp;#8217;t be an issue, because I&amp;#8217;ve had wifi signals cross this house before, no problem. But the router is at the &lt;strong&gt;low&lt;/strong&gt; end of the house this time, and I&amp;#8217;m setting up at the &lt;strong&gt;high&lt;/strong&gt; end. I set up the desktop, playstation, and my android phone next to each other, and none of them could get a consistent enough signal to actually connect.&lt;/p&gt;
+
+&lt;p&gt;Did a bit of hunting around my things, pulled out the best router I own (my little netgear dgn2000) to try and use it as a relay in my bedroom, halfway between the two machines, to boost the signal strength.&lt;/p&gt;
+
+&lt;p&gt;Delete two hours of my life trying to get the netgear to play nicely with the rest of the kit; I realised there&amp;#8217;s a phone line right where I needed the relay, and all of the computers in question have wifi cards.&lt;/p&gt;
+
+&lt;p&gt;Installed the netgear as the primary router &amp;amp; wireless AP for the house. PS3 and android phone connecting successfully; desktop? Not so much.&lt;/p&gt;
+
+&lt;h3 id=&#39;internet_hell_problem_2&#39;&gt;Internet Hell: Problem 2&lt;/h3&gt;
+
+&lt;p&gt;So I&amp;#8217;ve got a decent enough wireless signal now and I go to connect with the desktop machine.&lt;/p&gt;
+
+&lt;p&gt;I get into negotiations with the router and wicd freezes up and hangs, because it&amp;#8217;s trying to run an ifconfig command that&amp;#8217;s also frozen up and hung.&lt;/p&gt;
+
+&lt;p&gt;Meanwhile sudo -i no longer works&amp;#8230; In fact sudo anything just hangs, and I can&amp;#8217;t connect to my local mpd server anymore either.&lt;/p&gt;
+
+&lt;p&gt;(&lt;a href=&#39;http://serverfault.com/a/65373&#39;&gt;Corrupt routing tables?&lt;/a&gt; sure, why not&amp;#8230; I&amp;#8217;m too lazy to go back and diagnose the exact mechanism by which the wireless adapter was screwing up my machine)&lt;/p&gt;
+
+&lt;p&gt;I shut down the machine and that hangs too, trying to shut off apache, ntpd and samba. Out of frustration I try booting into windows.&lt;/p&gt;
+
+&lt;p&gt;I hop onto windows 7 and try to connect to the network from there.&lt;/p&gt;
+
+&lt;p&gt;I get into negotiations with the router and&amp;#8230; Actually no, to its credit the windows drivers for the wireless card managed to create &lt;strong&gt;some form of nonfunctioning unidentifiable connection monster&lt;/strong&gt; for windows to claim that I was connected to&amp;#8230; I suppose that&amp;#8217;s a better fail case than half the machine freezing up and dying.&lt;/p&gt;
+
+&lt;p&gt;By this point I&amp;#8217;ve decided that my little USB wireless adapter has been damaged in the 10 minutes of transit and is malfunctioning at a hardware level&amp;#8230;.&lt;/p&gt;
+
+&lt;p&gt;It&amp;#8217;s sleep time, so I&amp;#8217;ll research a new one in the morning.&lt;/p&gt;
+
+&lt;h3 id=&#39;internet_hell_problem_3&#39;&gt;Internet Hell: Problem 3&lt;/h3&gt;
+
+&lt;p&gt;Hopped out of bed this morning and straight onto my laptop to see what I can get in the market of USB wifi dongles, in person, on a Sunday afternoon. In New Zealand. Heh.&lt;/p&gt;
+
+&lt;p&gt;Now my connection to the router is dying on me every couple of minutes.&lt;/p&gt;
+
+&lt;p&gt;Dying on me as in, the laptop still thinks I&amp;#8217;m connected, the router&amp;#8217;s still taking new connections, but &lt;strong&gt;nothing works anymore.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Okay so this one was just &lt;a href=&#39;http://unix.stackexchange.com/a/38145&#39;&gt;interference from another local wireless network&lt;/a&gt;. Changed channel, everything&amp;#8217;s fine.&lt;/p&gt;
+
+&lt;h3 id=&#39;internet_hell_problem_4&#39;&gt;Internet Hell: Problem 4&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Hysterical Laughter&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I went down to pbtech and picked up another asus wifi dongle.&lt;/p&gt;
+
+&lt;p&gt;I don&amp;#8217;t know why I got another one of these; &lt;strong&gt;the one that just broke is an asus usb-n13, and the drivers for it &lt;a href=&#39;https://bbs.archlinux.org/viewtopic.php?pid=1124701&#39;&gt;cause kernel panics&lt;/a&gt; in kernels &amp;gt; 3.3&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I think I&amp;#8217;m just a sucker for wireless cards that come with a linux driver on a disc in the box, so I don&amp;#8217;t have to run a twenty metre cable to the box to download drivers.&lt;/p&gt;
+
+&lt;p&gt;Anyway, I picked up an N-53 N600&amp;#8230;. thing. It runs on a slightly different driver, so maybe I can upgrade my kernel off of 3.0-LTS now.&lt;/p&gt;
+
+&lt;p&gt;Got the dongle installed no problem. One thing to be said for these drivers - if you&amp;#8217;re happy running an ancient, crusty kernel, they&amp;#8217;re great: just compile and go.&lt;/p&gt;
+
+&lt;p&gt;&amp;#8230;.. Aaaand my network doesn&amp;#8217;t show up on the scan. I &lt;strong&gt;swear&lt;/strong&gt; I had a great signal last night&amp;#8230; Sometime between leaving the house to buy the wifi dongle and now, the router decided to freeze up and stop working.&lt;/p&gt;
+
+&lt;p&gt;Reboot the router. Network comes back. Connection stable. Okay. It&amp;#8217;s now 17:08 Sunday evening, but at least I&amp;#8217;ll be able to work tomorow&amp;#8230; Right?&lt;/p&gt;</description>
+<pubDate>Mon, 08 Jul 2013 05:08:00 +1200</pubDate>
+<link>http://kiirani.com//2013/07/08/internet-hell.html</link>
+<guid isPermaLink="true">http://kiirani.com//2013/07/08/internet-hell.html</guid>
+</item>
+
+<item>
+<title>I HAVE A DEGREE</title>
+<description>&lt;p&gt;Yeah, so, I graduated with my bachelor&amp;#8217;s degree on Monday.&lt;/p&gt;
+
+&lt;p&gt;Not thrilled or anything like that.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;#8217;s me in my pretty pretty regalia :)&lt;/p&gt;
+&lt;img class=&#39;fit&#39; src=&#39;http://i.imgur.com/s5ZmXANl.jpg&#39; /&gt;</description>
+<pubDate>Wed, 08 May 2013 00:00:00 +1200</pubDate>
+<link>http://kiirani.com//2013/05/08/i-have-a-degree.html</link>
+<guid isPermaLink="true">http://kiirani.com//2013/05/08/i-have-a-degree.html</guid>
+</item>
+
+<item>
+<title>My local church discusses God, Gay marriage</title>
+<description>&lt;img class=&#39;right&#39; src=&#39;http://i.imgur.com/sdRD8AP.jpg&#39; /&gt;
+&lt;p&gt;Blasphemy ensues.&lt;/p&gt;
+
+&lt;p&gt;St Matthew in the City is my local Anglican church. Local as in one block down the road.&lt;/p&gt;
+
+&lt;p&gt;I like to classify myself as an anti-theist, but I have huge amounts of respect for St Matthew&amp;#8217;s for their classy sense of humour and progressive attitude. It&amp;#8217;s also a very pretty church, architecturally speaking.&lt;/p&gt;
+
+&lt;p&gt;St Matthew&amp;#8217;s is &lt;a href=&#39;http://www.trademe.co.nz/Browse/Listing.aspx?id=585610950&#39;&gt;auctioning their current billboard&lt;/a&gt;, which commemorates the marriage equality bill, on trademe.&lt;/p&gt;
+
+&lt;p&gt;The Q&amp;amp;A on the auction is hilarious.&lt;/p&gt;
+&lt;iframe class=&#39;imgur-album&#39; frameborder=&#39;0&#39; height=&#39;400px&#39; src=&#39;http://imgur.com/a/bHGi4/embed&#39; width=&#39;100%&#39;&gt; &lt;/iframe&gt;
+&lt;p&gt;&amp;#160;&lt;/p&gt;</description>
+<pubDate>Sat, 27 Apr 2013 00:00:00 +1200</pubDate>
+<link>http://kiirani.com//2013/04/27/stmatthews.html</link>
+<guid isPermaLink="true">http://kiirani.com//2013/04/27/stmatthews.html</guid>
+</item>
+
+<item>
+<title>Using Tesseract OCR with PDF scans</title>
+<description>&lt;p&gt;We&amp;#8217;re at the very beginning of a push to create a centralised repository of company knowledge: a place where new employees &lt;strong&gt;know&lt;/strong&gt; they can go to find up to date, definitive information.&lt;/p&gt;
+
+&lt;p&gt;Just finding a place to start is a daunting task. Which is how I found myself retrieving a dog-eared photocopy of an introductory document from my folder in my cubby in the office I rarely visit.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#8217;ve been keeping this document around &amp;#8220;just in case&amp;#8221; for about a year and a half now, but I finally have a use for it: it&amp;#8217;s the perfect lightweight overview from which to spawn a dozen or so wiki pages &amp;#8211; just enough to get our knowledgable staff interested in contributing to and maintaining the information.&lt;/p&gt;
+
+&lt;p&gt;We&amp;#8217;re not sure where the master digital copy of this document got to. It obviously existed a couple of years ago, when the version I photocopied mine from was first printed. Equally obviously, it doesn&amp;#8217;t exist now.&lt;/p&gt;
+
+&lt;p&gt;While fruitlessly searching through our digital archives, the boss had a marvellous idea: if we can&amp;#8217;t find it, we can get the document scanned and OCR&amp;#8217;d instead&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Challenge accepted!&lt;/strong&gt; I know how to scan and OCR a document. Our photocopier even has a document feeder. I can probably work this out in the next half hour or so.&lt;/p&gt;
+
+&lt;p&gt;The photocopier emailed me a lovely 13 page PDF, ready to run through &lt;code&gt;tesseract&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Wait, no, that doesn&amp;#8217;t sound right.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;% tesseract file.pdf output
+Tesseract Open Source OCR Engine v3.02.02 with Leptonica
+Error in pixReadStream: Unknown format: no pix returned
+Error in pixRead: pix not read
+Unsupported image type.&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Tesseract doesn&amp;#8217;t read PDFs.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;#8217;m sure I used it successfully on a TIFF last time, though. &lt;br /&gt; Imagemagick can probably convert that for me.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;% convert file.pdf file.tiff
+% tesseract file.tiff output
+Tesseract Open Source OCR Engine v3.02.02 with Leptonica
+Error in pixReadFromTiffStream: can&amp;#39;t handle bpp &amp;gt; 32
+Error in pixReadStreamTiff: pix not read
+Error in pixReadStream: tiff: no pix returned
+Error in pixRead: pix not read
+Unsupported image type.&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Mm, nope. Some slight issues with colour TIFF images there.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;#8217;s make that an 8 bit TIFF instead.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;% convert file.pdf -depth 8 file.tiff
+% tesseract file.tiff output
+Tesseract Open Source OCR Engine v3.02.02 with Leptonica
+Page 1 of 13
+...&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Okay, now we&amp;#8217;re getting somewhere. Unfortunately, the result is gibberish:&lt;/p&gt;
+&lt;blockquote&gt;
+sugersm um wmcwankhmsmu n
+
+mm, may k,mvnImq.\-nyv&#39;r1nunr pcv:mclc&quot;s mnsmmsluv uu5|t.eqweu\\me&#39;v
+mivvr ucnk‘ lm cenlmsu hcv We r_ mu; M. ZIVEV Var‘ wharwuh
+&lt;/blockquote&gt;
+&lt;p&gt;Why? Well, because the TIFF file is barely readable.&lt;/p&gt;
+
+&lt;p&gt;There&amp;#8217;s one last piece of wisdom here - the &lt;a href=&#39;http://www.imagemagick.org/script/command-line-options.php#density&#39;&gt;standard resolution&lt;/a&gt; for &amp;#8220;convert&amp;#8221; is 72dpi.&lt;/p&gt;
+
+&lt;p&gt;If we re-convert that at 300dpi, the result&amp;#8230; actually comes out in English. Mostly.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;% convert -density 300 file.pdf -depth 8 file.tiff  
+% tesseract file.tiff output&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So, &lt;strong&gt;steps to read a PDF document with tesseract&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Convert the PDF document to something else&lt;/li&gt;
+
+&lt;li&gt;Make sure that something else is high resolution, and grayscale&lt;/li&gt;
+
+&lt;li&gt;Use tesseract to read the something else instead&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;And all of that took about a half hour to work out.&lt;/p&gt;</description>
+<pubDate>Fri, 22 Mar 2013 00:00:00 +1300</pubDate>
+<link>http://kiirani.com//2013/03/22/tesseract-pdf.html</link>
+<guid isPermaLink="true">http://kiirani.com//2013/03/22/tesseract-pdf.html</guid>
+</item>
+
+<item>
+<title>insomnia</title>
+<description>&lt;p&gt;Spending another night unable to sleep; took my pills, read a book, lay down, relaxed.&lt;/p&gt;
+
+&lt;p&gt;Eventually become frustrated. Lying in bed tossing and turning isn&amp;#8217;t productive.&lt;/p&gt;
+
+&lt;p&gt;I get up, fiddle with my website, write some documentation, think about work tomorrow.&lt;/p&gt;
+
+&lt;p&gt;Manage some semblance of exhaustion by 6am&amp;#8230; Maybe enough to drop off before 7&amp;#8230; I can&amp;#8217;t afford to wake up at one in the afternoon after only 6 hours of sleep&amp;#8230; again&amp;#8230;&lt;/p&gt;
+
+&lt;p&gt;I like to think I&amp;#8217;m having trouble sleeping because I&amp;#8217;m stressed, but then lorazepam, glorious cure of anxiety and creator of unconsciousness, lorazepam doesn&amp;#8217;t work. I don&amp;#8217;t know how to deal with this.&lt;/p&gt;</description>
+<pubDate>Wed, 20 Mar 2013 00:00:00 +1300</pubDate>
+<link>http://kiirani.com//2013/03/20/insomnia.html</link>
+<guid isPermaLink="true">http://kiirani.com//2013/03/20/insomnia.html</guid>
+</item>
+
+<item>
+<title>(pacman) resolving missing dependencies</title>
+<description>&lt;p&gt;I was in dependency hell on my last system update. I&amp;#8217;m impatient, so I resolve dependency hell by bypassing dependency checks altogether.&lt;/p&gt;
+
+&lt;p&gt;Having successfully run &lt;code&gt;pacman -Sudd&lt;/code&gt;, I&amp;#8217;m now stuck with some missing dependencies and a major headache every time I try to run things&amp;#8230; Yay!&lt;/p&gt;
+
+&lt;p&gt;The official way to search your Arch system for missing dependencies is the &lt;code&gt;testdb&lt;/code&gt; command.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;testdb&lt;/code&gt; is useless for piping into pacman: it doesn&amp;#8217;t have any special piped output, nor does it have a linear option like pactree (&amp;#9829; pactree -l).&lt;/p&gt;
+
+&lt;p&gt;The resulting output is a mess of human readableness&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;missing dependency for blender : openshadinglanguage
+missing dependency for gnome-settings-daemon : ibus
+missing dependency for lib32-mesa : lib32-libdrm
+missing dependency for lib32-mesa : lib32-systemd
+missing dependency for libpurple : farstream-0.1
+missing dependency for mga-dri : mesa-libgl
+missing dependency for openimageio : intel-tbb
+missing dependency for workrave : gtkmm3
+missing dependency for workrave : python2-cheetah&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Fortunately this is pretty easily cleaned up with a little bit of commandline magic We can cut this at &amp;#8221;:&amp;#8221;, grab the second half, and then trim off the leading whitespace.&lt;/p&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;bash&#39;&gt;&lt;span class=&#39;c&#39;&gt;# testdb | cut -d: -f2 | sed s&amp;quot;/ //g&amp;quot;  &lt;/span&gt;
+openshadinglanguage
+ibus
+lib32-libdrm
+lib32-systemd
+farstream-0.1
+mesa-libgl
+intel-tbb
+gtkmm3
+python2-cheetah
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This list can then be piped into pacman :&lt;/p&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;bash&#39;&gt;&lt;span class=&#39;c&#39;&gt;# testdb | cut -d: -f2 | sed s&amp;quot;/ //g&amp;quot; | pacman -S -&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;But for me, this doesn&amp;#8217;t end here.&lt;/p&gt;
+
+&lt;p&gt;The reason I ran an -Sdd in the first place was I have some weird dependency conflicts between mesa-libgl and my nvidia drivers, and I can&amp;#8217;t be bothered fixing those right now.&lt;/p&gt;
+
+&lt;p&gt;I could do a basic &lt;code&gt;| grep -v &amp;quot;mesa-libgl&amp;quot;&lt;/code&gt;, but I thought it would be nice to go through each package and check that it and its dependencies won&amp;#8217;t cause me any problems&lt;/p&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;bash&#39;&gt;&lt;span class=&#39;k&#39;&gt;for &lt;/span&gt;line in &lt;span class=&#39;sb&#39;&gt;`&lt;/span&gt;testdb | cut -d: -f2 | sed s&lt;span class=&#39;s2&#39;&gt;&amp;quot;/ //g&amp;quot;&lt;/span&gt;&lt;span class=&#39;sb&#39;&gt;`&lt;/span&gt;; &lt;span class=&#39;k&#39;&gt;do &lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;    &lt;/span&gt;pacman -S &lt;span class=&#39;nv&#39;&gt;$line&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;done&lt;/span&gt;;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Okay, so, I&amp;#8217;m still left in dependency hell with libgl, but most of my system functions and my bash-fu is stronger.&lt;/p&gt;</description>
+<pubDate>Mon, 18 Mar 2013 00:00:00 +1300</pubDate>
+<link>http://kiirani.com//2013/03/18/pacman-dependencies.html</link>
+<guid isPermaLink="true">http://kiirani.com//2013/03/18/pacman-dependencies.html</guid>
+</item>
+
+<item>
+<title>bad comments are bad</title>
+<description>&lt;p&gt;My local apache install has some issues. For one thing, it&amp;#8217;s completely ignoring everything I put in .htaccess.&lt;/p&gt;
+
+&lt;p&gt;My first mistake was going into my main configuration to try and track this down.&lt;br /&gt; My second mistake was reading the comments I&amp;#8217;ve left in this file.&lt;/p&gt;
+
+&lt;p&gt;I think it might be time to consider reconfiguring apache.&lt;/p&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;bash&#39;&gt;&lt;span class=&#39;c&#39;&gt;# Wtf? This is redundant..&lt;/span&gt;
+
+&lt;span class=&#39;c&#39;&gt;# This is going to get in the way in later life :)&lt;/span&gt;
+
+&lt;span class=&#39;c&#39;&gt;# For compatibility with my old setup&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;# Needs to be changed lol&lt;/span&gt;
+
+&lt;span class=&#39;c&#39;&gt;# Icons for apache generated pages. Should be replaced soon&lt;/span&gt;
+
+&lt;span class=&#39;c&#39;&gt;# For the love of god, turn this down after use&lt;/span&gt;
+
+&lt;span class=&#39;c&#39;&gt;# Rewrite rules SHOULD go into .htaccess files, but nvm for now&lt;/span&gt;
+
+&lt;span class=&#39;c&#39;&gt;# Commented until I can migrate script to modern python&lt;/span&gt;
+
+&lt;span class=&#39;c&#39;&gt;# Should php ever break...&lt;/span&gt;
+
+&lt;span class=&#39;c&#39;&gt;# More magic?&lt;/span&gt;
+
+&lt;span class=&#39;c&#39;&gt;# Indexes are globally disabled, but oh well, need to configure somewhere.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+<pubDate>Sat, 16 Mar 2013 00:00:00 +1300</pubDate>
+<link>http://kiirani.com//2013/03/16/bad-comments-are-bad.html</link>
+<guid isPermaLink="true">http://kiirani.com//2013/03/16/bad-comments-are-bad.html</guid>
+</item>
+
+<item>
+<title>Some commandline package list processing</title>
+<description>&lt;p&gt;This seems to come up a lot for me. I&amp;#8217;m sure I&amp;#8217;m the only person in the world, though.&lt;/p&gt;
+
+&lt;p&gt;I have two problems:&lt;/p&gt;
+
+&lt;p&gt;1) Every now and then, I get the urge to reinstall (nearly) every package on my system&lt;/p&gt;
+
+&lt;p&gt;2) I&amp;#8217;ve got a pile of explicitly installed packages which are not in the package repositories&lt;/p&gt;
+
+&lt;p&gt;The solution to problem number one under arch is a simple pacman -S $(pacman -Qq). Easy as.&lt;br /&gt; Of course, all of the packages from problem number two get in the way of this. There&amp;#8217;s no clear way around the problem, so here&amp;#8217;s some text processing fun:&lt;/p&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;bash&#39;&gt;&lt;span class=&#39;c&#39;&gt;# pacman -Qq &amp;gt; all&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;# pacman -Qm | cut -d\  -f 1 &amp;gt; bad&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;# grep -vf bad all &amp;gt; good&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;# pacman -S - &amp;lt; good&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+<pubDate>Mon, 16 Jul 2012 00:00:00 +1200</pubDate>
+<link>http://kiirani.com//2012/07/16/cli-package-list-processing.html</link>
+<guid isPermaLink="true">http://kiirani.com//2012/07/16/cli-package-list-processing.html</guid>
+</item>
+
+<item>
+<title>and today's question is</title>
+<description>&lt;p&gt;&lt;strong&gt;Why&lt;/strong&gt; does a text field (input type=&amp;#8221;text&amp;#8221;) have a &amp;#8220;checked&amp;#8221; property?&lt;/p&gt;</description>
+<pubDate>Thu, 28 Jun 2012 00:00:00 +1200</pubDate>
+<link>http://kiirani.com//2012/06/28/todays-question.html</link>
+<guid isPermaLink="true">http://kiirani.com//2012/06/28/todays-question.html</guid>
+</item>
+
+</channel>
+</rss>

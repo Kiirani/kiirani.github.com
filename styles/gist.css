@@ -1,0 +1,36 @@
+
+.gist-file {
+	border:5px solid #001737 !important;
+}
+
+.gist .gist-file .gist-data {
+	background:#CFE3FF !important;
+}
+
+
+.line-numbers,.gist-meta {
+	background:#6392D6 !important;
+	color:black !important;
+}
+
+.gist .gist-file .gist-data td.line-data {
+	padding-left:2ex !important;
+}
+
+
+.gist-meta a {
+	color:#222 !important;
+}
+
+.gist-meta a:visited {
+	color:#333 !important;
+}
+
+.gist-meta a:hover {
+	color:black !important;
+}
+
+
+.gist .c1 {
+	color: #002962 !important;
+}
