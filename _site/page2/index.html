@@ -1,0 +1,345 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>kiirani.com - blag</title>
+
+	<link rel="stylesheet" type="text/css" href="/styles/site.css">
+	<link rel="stylesheet" type="text/css" href="/styles/syntax.css">
+	<link rel="stylesheet" type="text/css" href="/styles/gist.css">
+
+	<link rel="alternate" type="application/rss+xml" title="kiirani.com rss feed" href="/feed.xml">
+
+	<meta name="viewport" content="width=640" />
+
+</head>
+
+<body>
+<div id="h4x"></div>
+
+<h1 id="main-header">
+	<a href="/">kiirani.com / blag</a>
+
+</h1>
+
+<nav id="main-nav">
+	<ul id="site-pages">
+	
+		
+		
+		
+		<li> <a href="/index.html">blag</a> </li>
+		
+		
+	
+		
+		
+		
+		
+	
+		
+		
+		
+		<li> <a href="/about.html">about</a> </li>
+		
+		
+	
+		
+		
+	
+		
+		
+	
+	</ul>
+
+	
+<h2>find kiirani</h2>
+<ul>
+	<li><a href="https://github.com/Kiirani">github</a></li>
+	<li><a href="http://stackoverflow.com/users/1487282/kiirani">stackoverflow</a></li>
+	<li><a href="http://www.facebook.com/kiirani">facebook</a>
+</ul>	
+
+</nav>
+
+
+<div id="main-content">
+
+	<nav class="pagination">
+  
+  	
+    <a href="/" class="newer">Newer</a>
+    
+  
+
+  
+
+  
+    
+  <span class="page_number ">2 of 3</span>
+  
+  
+
+  
+    <a href="/page3" class="older ">older</a>
+  
+</nav>
+
+
+
+
+<section id="posts">
+
+
+<article class="post">
+	<header>
+		<h2> <a href="/2013/03/20/insomnia.html">insomnia</a> </h2>
+		<span>posted 20 March 2013</span>
+	</header>
+
+	<p>Spending another night unable to sleep; took my pills, read a book, lay down, relaxed.</p>
+
+<p>Eventually become frustrated. Lying in bed tossing and turning isn&#8217;t productive.</p>
+
+<p>I get up, fiddle with my website, write some documentation, think about work tomorrow.</p>
+
+<p>Manage some semblance of exhaustion by 6am&#8230; Maybe enough to drop off before 7&#8230; I can&#8217;t afford to wake up at one in the afternoon after only 6 hours of sleep&#8230; again&#8230;</p>
+
+<p>I like to think I&#8217;m having trouble sleeping because I&#8217;m stressed, but then lorazepam, glorious cure of anxiety and creator of unconsciousness, lorazepam doesn&#8217;t work. I don&#8217;t know how to deal with this.</p>
+
+	<footer>
+	<p class="tags">tags: 
+	
+	life, 
+	
+	sleep
+	
+	<a class="commentsLink"  href="/2013/03/20/insomnia.html#disqus_thread">view comments</a>
+	</footer>
+</article>
+
+
+
+<article class="post">
+	<header>
+		<h2> <a href="/2013/03/18/pacman-dependencies.html">(pacman) resolving missing dependencies</a> </h2>
+		<span>posted 18 March 2013</span>
+	</header>
+
+	<p>I was in dependency hell on my last system update. I&#8217;m impatient, so I resolve dependency hell by bypassing dependency checks altogether.</p>
+
+<p>Having successfully run <code>pacman -Sudd</code>, I&#8217;m now stuck with some missing dependencies and a major headache every time I try to run things&#8230; Yay!</p>
+
+<p>The official way to search your Arch system for missing dependencies is the <code>testdb</code> command.</p>
+
+<p><code>testdb</code> is useless for piping into pacman: it doesn&#8217;t have any special piped output, nor does it have a linear option like pactree (&#9829; pactree -l).</p>
+
+<p>The resulting output is a mess of human readableness</p>
+
+<pre><code>missing dependency for blender : openshadinglanguage
+missing dependency for gnome-settings-daemon : ibus
+missing dependency for lib32-mesa : lib32-libdrm
+missing dependency for lib32-mesa : lib32-systemd
+missing dependency for libpurple : farstream-0.1
+missing dependency for mga-dri : mesa-libgl
+missing dependency for openimageio : intel-tbb
+missing dependency for workrave : gtkmm3
+missing dependency for workrave : python2-cheetah</code></pre>
+
+<p>Fortunately this is pretty easily cleaned up with a little bit of commandline magic We can cut this at &#8221;:&#8221;, grab the second half, and then trim off the leading whitespace.</p>
+<div class='highlight'><pre><code class='bash'><span class='c'># testdb | cut -d: -f2 | sed s&quot;/ //g&quot;  </span>
+openshadinglanguage
+ibus
+lib32-libdrm
+lib32-systemd
+farstream-0.1
+mesa-libgl
+intel-tbb
+gtkmm3
+python2-cheetah
+</code></pre></div>
+<p>This list can then be piped into pacman :</p>
+<div class='highlight'><pre><code class='bash'><span class='c'># testdb | cut -d: -f2 | sed s&quot;/ //g&quot; | pacman -S -</span>
+</code></pre></div>
+<p>But for me, this doesn&#8217;t end here.</p>
+
+<p>The reason I ran an -Sdd in the first place was I have some weird dependency conflicts between mesa-libgl and my nvidia drivers, and I can&#8217;t be bothered fixing those right now.</p>
+
+<p>I could do a basic <code>| grep -v &quot;mesa-libgl&quot;</code>, but I thought it would be nice to go through each package and check that it and its dependencies won&#8217;t cause me any problems</p>
+<div class='highlight'><pre><code class='bash'><span class='k'>for </span>line in <span class='sb'>`</span>testdb | cut -d: -f2 | sed s<span class='s2'>&quot;/ //g&quot;</span><span class='sb'>`</span>; <span class='k'>do </span>
+<span class='k'>    </span>pacman -S <span class='nv'>$line</span>
+<span class='k'>done</span>;
+</code></pre></div>
+<p>Okay, so, I&#8217;m still left in dependency hell with libgl, but most of my system functions and my bash-fu is stronger.</p>
+
+	<footer>
+	<p class="tags">tags: 
+	
+	bash, 
+	
+	arch, 
+	
+	pacman
+	
+	<a class="commentsLink"  href="/2013/03/18/pacman-dependencies.html#disqus_thread">view comments</a>
+	</footer>
+</article>
+
+
+
+<article class="post">
+	<header>
+		<h2> <a href="/2013/03/16/bad-comments-are-bad.html">bad comments are bad</a> </h2>
+		<span>posted 16 March 2013</span>
+	</header>
+
+	<p>My local apache install has some issues. For one thing, it&#8217;s completely ignoring everything I put in .htaccess.</p>
+
+<p>My first mistake was going into my main configuration to try and track this down.<br /> My second mistake was reading the comments I&#8217;ve left in this file.</p>
+
+<p>I think it might be time to consider reconfiguring apache.</p>
+<div class='highlight'><pre><code class='bash'><span class='c'># Wtf? This is redundant..</span>
+
+<span class='c'># This is going to get in the way in later life :)</span>
+
+<span class='c'># For compatibility with my old setup</span>
+<span class='c'># Needs to be changed lol</span>
+
+<span class='c'># Icons for apache generated pages. Should be replaced soon</span>
+
+<span class='c'># For the love of god, turn this down after use</span>
+
+<span class='c'># Rewrite rules SHOULD go into .htaccess files, but nvm for now</span>
+
+<span class='c'># Commented until I can migrate script to modern python</span>
+
+<span class='c'># Should php ever break...</span>
+
+<span class='c'># More magic?</span>
+
+<span class='c'># Indexes are globally disabled, but oh well, need to configure somewhere.</span>
+</code></pre></div>
+
+	<footer>
+	<p class="tags">tags: 
+	
+	<a class="commentsLink"  href="/2013/03/16/bad-comments-are-bad.html#disqus_thread">view comments</a>
+	</footer>
+</article>
+
+
+
+<article class="post">
+	<header>
+		<h2> <a href="/2012/07/16/cli-package-list-processing.html">Some commandline package list processing</a> </h2>
+		<span>posted 16 July 2012</span>
+	</header>
+
+	<p>This seems to come up a lot for me. I&#8217;m sure I&#8217;m the only person in the world, though.</p>
+
+<p>I have two problems:</p>
+
+<p>1) Every now and then, I get the urge to reinstall (nearly) every package on my system</p>
+
+<p>2) I&#8217;ve got a pile of explicitly installed packages which are not in the package repositories</p>
+
+<p>The solution to problem number one under arch is a simple pacman -S $(pacman -Qq). Easy as.<br /> Of course, all of the packages from problem number two get in the way of this. There&#8217;s no clear way around the problem, so here&#8217;s some text processing fun:</p>
+<div class='highlight'><pre><code class='bash'><span class='c'># pacman -Qq &gt; all</span>
+<span class='c'># pacman -Qm | cut -d\  -f 1 &gt; bad</span>
+<span class='c'># grep -vf bad all &gt; good</span>
+<span class='c'># pacman -S - &lt; good</span>
+</code></pre></div>
+
+	<footer>
+	<p class="tags">tags: 
+	
+	bash, 
+	
+	arch, 
+	
+	pacman
+	
+	<a class="commentsLink"  href="/2012/07/16/cli-package-list-processing.html#disqus_thread">view comments</a>
+	</footer>
+</article>
+
+
+
+<article class="post">
+	<header>
+		<h2> <a href="/2012/06/28/todays-question.html">and today's question is</a> </h2>
+		<span>posted 28 June 2012</span>
+	</header>
+
+	<p><strong>Why</strong> does a text field (input type=&#8221;text&#8221;) have a &#8220;checked&#8221; property?</p>
+
+	<footer>
+	<p class="tags">tags: 
+	
+	html
+	
+	<a class="commentsLink"  href="/2012/06/28/todays-question.html#disqus_thread">view comments</a>
+	</footer>
+</article>
+
+
+
+</section>
+
+<nav class="pagination">
+  
+  	
+    <a href="/" class="newer">Newer</a>
+    
+  
+
+  
+
+  
+    
+  <span class="page_number ">2 of 3</span>
+  
+  
+
+  
+    <a href="/page3" class="older ">older</a>
+  
+</nav>
+
+
+
+
+<script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'kiirani'; // required: replace example with your forum shortname
+
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script> 
+
+
+</div>
+
+
+<footer id="main-footer">
+
+
+
+
+<p style="text-align:center"> <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img style="vertical-align:middle" alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a> <a href="https://github.com/Kiirani/kiirani.github.com">source code</a>
+
+<p>
+site by Kiirani, use only as directed <br>
+design inspired by <a href="https://github.com/orderedlist/minimal">"minimal"</a>
+</footer>
+
+</body>
+
+
+</html>

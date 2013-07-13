@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>kiirani.com - I am in internet hell</title>
+
+	<link rel="stylesheet" type="text/css" href="/styles/site.css">
+	<link rel="stylesheet" type="text/css" href="/styles/syntax.css">
+	<link rel="stylesheet" type="text/css" href="/styles/gist.css">
+
+	<link rel="alternate" type="application/rss+xml" title="kiirani.com rss feed" href="/feed.xml">
+
+	<meta name="viewport" content="width=640" />
+
+</head>
+
+<body>
+<div id="h4x"></div>
+
+<h1 id="main-header">
+	<a href="/">kiirani.com / I am in internet hell</a>
+
+</h1>
+
+<nav id="main-nav">
+	<ul id="site-pages">
+	
+		
+		
+		
+		<li> <a href="/index.html">blag</a> </li>
+		
+		
+	
+		
+		
+		
+		
+	
+		
+		
+		
+		<li> <a href="/about.html">about</a> </li>
+		
+		
+	
+		
+		
+	
+		
+		
+	
+	</ul>
+
+	
+<h2>find kiirani</h2>
+<ul>
+	<li><a href="https://github.com/Kiirani">github</a></li>
+	<li><a href="http://stackoverflow.com/users/1487282/kiirani">stackoverflow</a></li>
+	<li><a href="http://www.facebook.com/kiirani">facebook</a>
+</ul>	
+
+</nav>
+
+
+<div id="main-content">
+
+	<article class="post">
+	<header>
+		<h2>I am in internet hell</h2>
+		<span>posted 08 July 2013</span>
+	</header>
+
+	<p>I&#8217;m moving in a month.</p>
+
+<p>Before they move my worldly goods, the relocation company has to assess the location where they&#8217;ll be picking my stuff up from, and the volume of stuff they&#8217;ll be picking up.<br /> My tiny apartment is not going to be an appropriate place from which to relocate internationally, so I&#8217;ve moved everything to my parents&#8217; place.</p>
+
+<p>Including myself.<br /> I got here yesterday afternoon, with my things and my computer. Setting that up is doublepluspriority, because I need to use it to work on Monday.</p>
+
+<h3 id='internet_hell_problem_1'>Internet Hell: Problem 1</h3>
+
+<p>Enter Internet Satan, stage left.</p>
+
+<p>First up, the router is at the other end of the house. This shouldn&#8217;t be an issue, because I&#8217;ve had wifi signals cross this house before, no problem. But the router is at the <strong>low</strong> end of the house this time, and I&#8217;m setting up at the <strong>high</strong> end. I set up the desktop, playstation, and my android phone next to each other, and none of them could get a consistent enough signal to actually connect.</p>
+
+<p>Did a bit of hunting around my things, pulled out the best router I own (my little netgear dgn2000) to try and use it as a relay in my bedroom, halfway between the two machines, to boost the signal strength.</p>
+
+<p>Delete two hours of my life trying to get the netgear to play nicely with the rest of the kit; I realised there&#8217;s a phone line right where I needed the relay, and all of the computers in question have wifi cards.</p>
+
+<p>Installed the netgear as the primary router &amp; wireless AP for the house. PS3 and android phone connecting successfully; desktop? Not so much.</p>
+
+<h3 id='internet_hell_problem_2'>Internet Hell: Problem 2</h3>
+
+<p>So I&#8217;ve got a decent enough wireless signal now and I go to connect with the desktop machine.</p>
+
+<p>I get into negotiations with the router and wicd freezes up and hangs, because it&#8217;s trying to run an ifconfig command that&#8217;s also frozen up and hung.</p>
+
+<p>Meanwhile sudo -i no longer works&#8230; In fact sudo anything just hangs, and I can&#8217;t connect to my local mpd server anymore either.</p>
+
+<p>(<a href='http://serverfault.com/a/65373'>Corrupt routing tables?</a> sure, why not&#8230; I&#8217;m too lazy to go back and diagnose the exact mechanism by which the wireless adapter was screwing up my machine)</p>
+
+<p>I shut down the machine and that hangs too, trying to shut off apache, ntpd and samba. Out of frustration I try booting into windows.</p>
+
+<p>I hop onto windows 7 and try to connect to the network from there.</p>
+
+<p>I get into negotiations with the router and&#8230; Actually no, to its credit the windows drivers for the wireless card managed to create <strong>some form of nonfunctioning unidentifiable connection monster</strong> for windows to claim that I was connected to&#8230; I suppose that&#8217;s a better fail case than half the machine freezing up and dying.</p>
+
+<p>By this point I&#8217;ve decided that my little USB wireless adapter has been damaged in the 10 minutes of transit and is malfunctioning at a hardware level&#8230;.</p>
+
+<p>It&#8217;s sleep time, so I&#8217;ll research a new one in the morning.</p>
+
+<h3 id='internet_hell_problem_3'>Internet Hell: Problem 3</h3>
+
+<p>Hopped out of bed this morning and straight onto my laptop to see what I can get in the market of USB wifi dongles, in person, on a Sunday afternoon. In New Zealand. Heh.</p>
+
+<p>Now my connection to the router is dying on me every couple of minutes.</p>
+
+<p>Dying on me as in, the laptop still thinks I&#8217;m connected, the router&#8217;s still taking new connections, but <strong>nothing works anymore.</strong></p>
+
+<p>Okay so this one was just <a href='http://unix.stackexchange.com/a/38145'>interference from another local wireless network</a>. Changed channel, everything&#8217;s fine.</p>
+
+<h3 id='internet_hell_problem_4'>Internet Hell: Problem 4</h3>
+
+<p><em>Hysterical Laughter</em></p>
+
+<p>I went down to pbtech and picked up another asus wifi dongle.</p>
+
+<p>I don&#8217;t know why I got another one of these; <strong>the one that just broke is an asus usb-n13, and the drivers for it <a href='https://bbs.archlinux.org/viewtopic.php?pid=1124701'>cause kernel panics</a> in kernels &gt; 3.3</strong></p>
+
+<p>I think I&#8217;m just a sucker for wireless cards that come with a linux driver on a disc in the box, so I don&#8217;t have to run a twenty metre cable to the box to download drivers.</p>
+
+<p>Anyway, I picked up an N-53 N600&#8230;. thing. It runs on a slightly different driver, so maybe I can upgrade my kernel off of 3.0-LTS now.</p>
+
+<p>Got the dongle installed no problem. One thing to be said for these drivers - if you&#8217;re happy running an ancient, crusty kernel, they&#8217;re great: just compile and go.</p>
+
+<p>&#8230;.. Aaaand my network doesn&#8217;t show up on the scan. I <strong>swear</strong> I had a great signal last night&#8230; Sometime between leaving the house to buy the wifi dongle and now, the router decided to freeze up and stop working.</p>
+
+<p>Reboot the router. Network comes back. Connection stable. Okay. It&#8217;s now 17:08 Sunday evening, but at least I&#8217;ll be able to work tomorow&#8230; Right?</p>
+
+</article>
+
+<section id="related">
+    <h2>other posts</h2>
+    <p class="subhead">these posts may or may not be related to this post</p>
+
+    
+        
+        <a href="/2012/05/15/ruby-gtkbuilder.html">Ruby & GTKBuilder / short example</a>
+        
+    
+        
+        <a href="/2012/06/28/todays-question.html">and today's question is</a>
+        
+    
+        
+        <a href="/2012/07/16/cli-package-list-processing.html">Some commandline package list processing</a>
+        
+    
+        
+        <a href="/2013/03/16/bad-comments-are-bad.html">bad comments are bad</a>
+        
+    
+        
+        <a href="/2013/03/18/pacman-dependencies.html">(pacman) resolving missing dependencies</a>
+        
+    
+        
+        <a href="/2013/03/20/insomnia.html">insomnia</a>
+        
+    
+        
+        <a href="/2013/03/22/tesseract-pdf.html">Using Tesseract OCR with PDF scans</a>
+        
+    
+        
+        <a href="/2013/04/27/stmatthews.html">My local church discusses God, Gay marriage</a>
+        
+    
+        
+        <a href="/2013/05/08/i-have-a-degree.html">I HAVE A DEGREE</a>
+        
+    
+        
+        <a href="/2013/07/08/asdfgh.html">arrrrrrgggghhhh</a>
+        
+    
+
+</section>
+
+<section id="tags">
+    <h2>tags</h2>
+    <p>
+    
+    life <br>
+    
+ 
+</section>
+
+<section id="comments">
+<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'kiirani'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+</div>
+
+
+<footer id="main-footer">
+
+
+
+
+<p style="text-align:center"> <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/"><img style="vertical-align:middle" alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a> <a href="https://github.com/Kiirani/kiirani.github.com">source code</a>
+
+<p>
+site by Kiirani, use only as directed <br>
+design inspired by <a href="https://github.com/orderedlist/minimal">"minimal"</a>
+</footer>
+
+</body>
+
+
+</html>
