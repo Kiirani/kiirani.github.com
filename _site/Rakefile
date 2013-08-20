@@ -14,7 +14,7 @@ task :debug do
 end
 
 
-task :publish => :build do 
+task :publish do 
 	bold = %x[tput bold]
 	normal = %x[tput sgr0]
 	puts "\n\n#{bold}Enter a commit message:#{normal} "
