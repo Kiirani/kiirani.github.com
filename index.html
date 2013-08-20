@@ -29,12 +29,12 @@
 		
 		
 		
-		<li> <a href="/index.html">blag</a> </li>
-		
 		
 	
 		
 		
+		
+		<li> <a href="/about.html">about</a> </li>
 		
 		
 	
@@ -48,13 +48,18 @@
 		
 		
 		
-		<li> <a href="/about.html">about</a> </li>
+		<li> <a href="/index.html">blag</a> </li>
 		
 		
 	
 		
 		
 	
+		
+		
+	
+		
+		
 		
 		
 	
@@ -153,6 +158,44 @@
 
 
 <section id="posts">
+
+
+<article class="post">
+	<header>
+		<h2> <a href="/2013/08/20/updates-from-sydney.html">Updates from Sydney</a> </h2>
+		<span>posted 20 August 2013</span>
+	</header>
+
+	<p>Today I signed the tenancy agreement for my new apartment. It&#8217;s gorgeous &#8212; a sunny little studio at the city end of Glebe, with a raised partition for the bedroom hidden behind a half wall. The walls are covered with artwork: silhouettes of birds, leaves, trees. I&#8217;m in love.</p>
+
+<p>I got to Sydney at 10:30am on the 8th of August. Took a cab from the airport, dropped my bags at the hotel, pulled on a clean shirt and ran straight out the door to go to the office and have a social lunch with my team. <br /> I went from the office to the bank, and activated my account. From the bank to the nearest Optus store, picked up a pre-paid sim card, and finally from there back home to tell everyone my new cell number.</p>
+
+<p>On the Friday I went supermarket shopping, applied for my tax file number, met a friend for lunch. By about 3pm I realised that I&#8217;d run all of the errands set aside for my first weekend.</p>
+
+<p>I was going to start flat hunting in the middle of August. Instead, I went out on the Saturday. My new place is the second of ten that I viewed that day&#8230; The more apartments I looked at, the more I wanted this one.</p>
+
+<p>I submitted my application at about 9pm Sunday evening; by midday Monday, it was accepted.<br /><br /><br /></p>
+
+<p>So far, working at Google is a lot like attending university.</p>
+
+<p>The first few days are showing up, being given stationery and introductory material. <br /> You&#8217;re told how to find things, what facilities are available on campus, and how to use your email.</p>
+
+<p>The rest of the week, I&#8217;ve shown up at work in the morning and eaten breakfast there, because I was too lazy to have any at home. <br /> I sit at a computer programming for most of the day, surrounded by cool, nerdy people who I can ask for advice, or just generally be social with.</p>
+
+<p>Inevitably, I end up staying longer than I intended and having dinner at work instead of at home. Today was the first day since I started that I&#8217;ve eaten dinner outside of the office.</p>
+
+<p>Like assignments, the first little project I actually have to work on is straightforward &#8212; I&#8217;ve almost finished it. Polishing to do, submission, code review&#8230; And like assignments, I&#8217;m expecting the second project to be exponentially harder.<br /><br /></p>
+
+<p>My job is just like attending university, only the facilities are better, the problems more interesting, and I get paid to be there.<br /> I&#8217;m loving every minute of it :)</p>
+
+	<footer>
+	<p>
+		tags: <span class="tags"><a href="/tag/life.html" rel="tag">life</a>, <a href="/tag/sydney.html" rel="tag">sydney</a></span>
+		<a class="commentsLink"  href="/2013/08/20/updates-from-sydney.html#disqus_thread">view comments</a>
+	</p>
+	</footer>
+</article>
+
 
 
 <article class="post">
@@ -309,95 +352,6 @@
 	<p>
 		tags: <span class="tags"><a href="/tag/funny.html" rel="tag">funny</a></span>
 		<a class="commentsLink"  href="/2013/04/27/stmatthews.html#disqus_thread">view comments</a>
-	</p>
-	</footer>
-</article>
-
-
-
-<article class="post">
-	<header>
-		<h2> <a href="/2013/03/22/tesseract-pdf.html">Using Tesseract OCR with PDF scans</a> </h2>
-		<span>posted 22 March 2013</span>
-	</header>
-
-	<p>We&#8217;re at the very beginning of a push to create a centralised repository of company knowledge: a place where new employees <strong>know</strong> they can go to find up to date, definitive information.</p>
-
-<p>Just finding a place to start is a daunting task. Which is how I found myself retrieving a dog-eared photocopy of an introductory document from my folder in my cubby in the office I rarely visit.</p>
-
-<p>I&#8217;ve been keeping this document around &#8220;just in case&#8221; for about a year and a half now, but I finally have a use for it: it&#8217;s the perfect lightweight overview from which to spawn a dozen or so wiki pages &#8211; just enough to get our knowledgable staff interested in contributing to and maintaining the information.</p>
-
-<p>We&#8217;re not sure where the master digital copy of this document got to. It obviously existed a couple of years ago, when the version I photocopied mine from was first printed. Equally obviously, it doesn&#8217;t exist now.</p>
-
-<p>While fruitlessly searching through our digital archives, the boss had a marvellous idea: if we can&#8217;t find it, we can get the document scanned and OCR&#8217;d instead</p>
-
-<p><strong>Challenge accepted!</strong> I know how to scan and OCR a document. Our photocopier even has a document feeder. I can probably work this out in the next half hour or so.</p>
-
-<p>The photocopier emailed me a lovely 13 page PDF, ready to run through <code>tesseract</code>.</p>
-
-<p>Wait, no, that doesn&#8217;t sound right.</p>
-
-<pre><code>% tesseract file.pdf output
-Tesseract Open Source OCR Engine v3.02.02 with Leptonica
-Error in pixReadStream: Unknown format: no pix returned
-Error in pixRead: pix not read
-Unsupported image type.</code></pre>
-
-<p><strong>Tesseract doesn&#8217;t read PDFs.</strong></p>
-
-<p>I&#8217;m sure I used it successfully on a TIFF last time, though. <br /> Imagemagick can probably convert that for me.</p>
-
-<pre><code>% convert file.pdf file.tiff
-% tesseract file.tiff output
-Tesseract Open Source OCR Engine v3.02.02 with Leptonica
-Error in pixReadFromTiffStream: can&#39;t handle bpp &gt; 32
-Error in pixReadStreamTiff: pix not read
-Error in pixReadStream: tiff: no pix returned
-Error in pixRead: pix not read
-Unsupported image type.</code></pre>
-
-<p>Mm, nope. Some slight issues with colour TIFF images there.</p>
-
-<p>Let&#8217;s make that an 8 bit TIFF instead.</p>
-
-<pre><code>% convert file.pdf -depth 8 file.tiff
-% tesseract file.tiff output
-Tesseract Open Source OCR Engine v3.02.02 with Leptonica
-Page 1 of 13
-...</code></pre>
-
-<p>Okay, now we&#8217;re getting somewhere. Unfortunately, the result is gibberish:</p>
-<blockquote>
-sugersm um wmcwankhmsmu n
-
-mm, may k,mvnImq.\-nyv'r1nunr pcv:mclc"s mnsmmsluv uu5|t.eqweu\\me'v
-mivvr ucnk‘ lm cenlmsu hcv We r_ mu; M. ZIVEV Var‘ wharwuh
-</blockquote>
-<p>Why? Well, because the TIFF file is barely readable.</p>
-
-<p>There&#8217;s one last piece of wisdom here - the <a href='http://www.imagemagick.org/script/command-line-options.php#density'>standard resolution</a> for &#8220;convert&#8221; is 72dpi.</p>
-
-<p>If we re-convert that at 300dpi, the result&#8230; actually comes out in English. Mostly.</p>
-
-<pre><code>% convert -density 300 file.pdf -depth 8 file.tiff  
-% tesseract file.tiff output</code></pre>
-
-<p>So, <strong>steps to read a PDF document with tesseract</strong>:</p>
-
-<ol>
-<li>Convert the PDF document to something else</li>
-
-<li>Make sure that something else is high resolution, and grayscale</li>
-
-<li>Use tesseract to read the something else instead</li>
-</ol>
-
-<p>And all of that took about a half hour to work out.</p>
-
-	<footer>
-	<p>
-		tags: <span class="tags"><a href="/tag/tesseract.html" rel="tag">tesseract</a>, <a href="/tag/ocr.html" rel="tag">ocr</a>, <a href="/tag/imagemagick.html" rel="tag">imagemagick</a></span>
-		<a class="commentsLink"  href="/2013/03/22/tesseract-pdf.html#disqus_thread">view comments</a>
 	</p>
 	</footer>
 </article>

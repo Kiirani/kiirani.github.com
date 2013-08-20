@@ -8,6 +8,34 @@
 <atom:link href="http://kiirani.com//feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Updates from Sydney</title>
+<description>&lt;p&gt;Today I signed the tenancy agreement for my new apartment. It&amp;#8217;s gorgeous &amp;#8212; a sunny little studio at the city end of Glebe, with a raised partition for the bedroom hidden behind a half wall. The walls are covered with artwork: silhouettes of birds, leaves, trees. I&amp;#8217;m in love.&lt;/p&gt;
+
+&lt;p&gt;I got to Sydney at 10:30am on the 8th of August. Took a cab from the airport, dropped my bags at the hotel, pulled on a clean shirt and ran straight out the door to go to the office and have a social lunch with my team. &lt;br /&gt; I went from the office to the bank, and activated my account. From the bank to the nearest Optus store, picked up a pre-paid sim card, and finally from there back home to tell everyone my new cell number.&lt;/p&gt;
+
+&lt;p&gt;On the Friday I went supermarket shopping, applied for my tax file number, met a friend for lunch. By about 3pm I realised that I&amp;#8217;d run all of the errands set aside for my first weekend.&lt;/p&gt;
+
+&lt;p&gt;I was going to start flat hunting in the middle of August. Instead, I went out on the Saturday. My new place is the second of ten that I viewed that day&amp;#8230; The more apartments I looked at, the more I wanted this one.&lt;/p&gt;
+
+&lt;p&gt;I submitted my application at about 9pm Sunday evening; by midday Monday, it was accepted.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;So far, working at Google is a lot like attending university.&lt;/p&gt;
+
+&lt;p&gt;The first few days are showing up, being given stationery and introductory material. &lt;br /&gt; You&amp;#8217;re told how to find things, what facilities are available on campus, and how to use your email.&lt;/p&gt;
+
+&lt;p&gt;The rest of the week, I&amp;#8217;ve shown up at work in the morning and eaten breakfast there, because I was too lazy to have any at home. &lt;br /&gt; I sit at a computer programming for most of the day, surrounded by cool, nerdy people who I can ask for advice, or just generally be social with.&lt;/p&gt;
+
+&lt;p&gt;Inevitably, I end up staying longer than I intended and having dinner at work instead of at home. Today was the first day since I started that I&amp;#8217;ve eaten dinner outside of the office.&lt;/p&gt;
+
+&lt;p&gt;Like assignments, the first little project I actually have to work on is straightforward &amp;#8212; I&amp;#8217;ve almost finished it. Polishing to do, submission, code review&amp;#8230; And like assignments, I&amp;#8217;m expecting the second project to be exponentially harder.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;My job is just like attending university, only the facilities are better, the problems more interesting, and I get paid to be there.&lt;br /&gt; I&amp;#8217;m loving every minute of it :)&lt;/p&gt;</description>
+<pubDate>Tue, 20 Aug 2013 00:00:00 +1000</pubDate>
+<link>http://kiirani.com//2013/08/20/updates-from-sydney.html</link>
+<guid isPermaLink="true">http://kiirani.com//2013/08/20/updates-from-sydney.html</guid>
+</item>
+
+<item>
 <title>arrrrrrgggghhhh</title>
 <description>&lt;p&gt;that feeling you get when a new thing almost, almost works&amp;#8230;. you get it right up to the point of working, and for some reason can&amp;#8217;t bring it over the last hurdle&lt;/p&gt;
 
@@ -18,7 +46,7 @@
 &lt;p&gt;IT JUST GOES NOW&lt;/p&gt;
 
 &lt;p&gt;I need a stiff drink.&lt;/p&gt;</description>
-<pubDate>Mon, 08 Jul 2013 08:57:00 +1200</pubDate>
+<pubDate>Mon, 08 Jul 2013 06:57:00 +1000</pubDate>
 <link>http://kiirani.com//2013/07/08/asdfgh.html</link>
 <guid isPermaLink="true">http://kiirani.com//2013/07/08/asdfgh.html</guid>
 </item>
@@ -31,7 +59,7 @@
 
 &lt;p&gt;Including myself.&lt;br /&gt; I got here yesterday afternoon, with my things and my computer. Setting that up is doublepluspriority, because I need to use it to work on Monday.&lt;/p&gt;
 
-&lt;h3 id=&#39;internet_hell_problem_1&#39;&gt;Internet Hell: Problem 1&lt;/h3&gt;
+&lt;h3 id='internet_hell_problem_1'&gt;Internet Hell: Problem 1&lt;/h3&gt;
 
 &lt;p&gt;Enter Internet Satan, stage left.&lt;/p&gt;
 
@@ -43,7 +71,7 @@
 
 &lt;p&gt;Installed the netgear as the primary router &amp;amp; wireless AP for the house. PS3 and android phone connecting successfully; desktop? Not so much.&lt;/p&gt;
 
-&lt;h3 id=&#39;internet_hell_problem_2&#39;&gt;Internet Hell: Problem 2&lt;/h3&gt;
+&lt;h3 id='internet_hell_problem_2'&gt;Internet Hell: Problem 2&lt;/h3&gt;
 
 &lt;p&gt;So I&amp;#8217;ve got a decent enough wireless signal now and I go to connect with the desktop machine.&lt;/p&gt;
 
@@ -51,7 +79,7 @@
 
 &lt;p&gt;Meanwhile sudo -i no longer works&amp;#8230; In fact sudo anything just hangs, and I can&amp;#8217;t connect to my local mpd server anymore either.&lt;/p&gt;
 
-&lt;p&gt;(&lt;a href=&#39;http://serverfault.com/a/65373&#39;&gt;Corrupt routing tables?&lt;/a&gt; sure, why not&amp;#8230; I&amp;#8217;m too lazy to go back and diagnose the exact mechanism by which the wireless adapter was screwing up my machine)&lt;/p&gt;
+&lt;p&gt;(&lt;a href='http://serverfault.com/a/65373'&gt;Corrupt routing tables?&lt;/a&gt; sure, why not&amp;#8230; I&amp;#8217;m too lazy to go back and diagnose the exact mechanism by which the wireless adapter was screwing up my machine)&lt;/p&gt;
 
 &lt;p&gt;I shut down the machine and that hangs too, trying to shut off apache, ntpd and samba. Out of frustration I try booting into windows.&lt;/p&gt;
 
@@ -63,7 +91,7 @@
 
 &lt;p&gt;It&amp;#8217;s sleep time, so I&amp;#8217;ll research a new one in the morning.&lt;/p&gt;
 
-&lt;h3 id=&#39;internet_hell_problem_3&#39;&gt;Internet Hell: Problem 3&lt;/h3&gt;
+&lt;h3 id='internet_hell_problem_3'&gt;Internet Hell: Problem 3&lt;/h3&gt;
 
 &lt;p&gt;Hopped out of bed this morning and straight onto my laptop to see what I can get in the market of USB wifi dongles, in person, on a Sunday afternoon. In New Zealand. Heh.&lt;/p&gt;
 
@@ -71,15 +99,15 @@
 
 &lt;p&gt;Dying on me as in, the laptop still thinks I&amp;#8217;m connected, the router&amp;#8217;s still taking new connections, but &lt;strong&gt;nothing works anymore.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Okay so this one was just &lt;a href=&#39;http://unix.stackexchange.com/a/38145&#39;&gt;interference from another local wireless network&lt;/a&gt;. Changed channel, everything&amp;#8217;s fine.&lt;/p&gt;
+&lt;p&gt;Okay so this one was just &lt;a href='http://unix.stackexchange.com/a/38145'&gt;interference from another local wireless network&lt;/a&gt;. Changed channel, everything&amp;#8217;s fine.&lt;/p&gt;
 
-&lt;h3 id=&#39;internet_hell_problem_4&#39;&gt;Internet Hell: Problem 4&lt;/h3&gt;
+&lt;h3 id='internet_hell_problem_4'&gt;Internet Hell: Problem 4&lt;/h3&gt;
 
 &lt;p&gt;&lt;em&gt;Hysterical Laughter&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;I went down to pbtech and picked up another asus wifi dongle.&lt;/p&gt;
 
-&lt;p&gt;I don&amp;#8217;t know why I got another one of these; &lt;strong&gt;the one that just broke is an asus usb-n13, and the drivers for it &lt;a href=&#39;https://bbs.archlinux.org/viewtopic.php?pid=1124701&#39;&gt;cause kernel panics&lt;/a&gt; in kernels &amp;gt; 3.3&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I don&amp;#8217;t know why I got another one of these; &lt;strong&gt;the one that just broke is an asus usb-n13, and the drivers for it &lt;a href='https://bbs.archlinux.org/viewtopic.php?pid=1124701'&gt;cause kernel panics&lt;/a&gt; in kernels &amp;gt; 3.3&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;I think I&amp;#8217;m just a sucker for wireless cards that come with a linux driver on a disc in the box, so I don&amp;#8217;t have to run a twenty metre cable to the box to download drivers.&lt;/p&gt;
 
@@ -90,7 +118,7 @@
 &lt;p&gt;&amp;#8230;.. Aaaand my network doesn&amp;#8217;t show up on the scan. I &lt;strong&gt;swear&lt;/strong&gt; I had a great signal last night&amp;#8230; Sometime between leaving the house to buy the wifi dongle and now, the router decided to freeze up and stop working.&lt;/p&gt;
 
 &lt;p&gt;Reboot the router. Network comes back. Connection stable. Okay. It&amp;#8217;s now 17:08 Sunday evening, but at least I&amp;#8217;ll be able to work tomorow&amp;#8230; Right?&lt;/p&gt;</description>
-<pubDate>Mon, 08 Jul 2013 05:08:00 +1200</pubDate>
+<pubDate>Mon, 08 Jul 2013 03:08:00 +1000</pubDate>
 <link>http://kiirani.com//2013/07/08/internet-hell.html</link>
 <guid isPermaLink="true">http://kiirani.com//2013/07/08/internet-hell.html</guid>
 </item>
@@ -102,27 +130,27 @@
 &lt;p&gt;Not thrilled or anything like that.&lt;/p&gt;
 
 &lt;p&gt;Here&amp;#8217;s me in my pretty pretty regalia :)&lt;/p&gt;
-&lt;img class=&#39;fit&#39; src=&#39;http://i.imgur.com/s5ZmXANl.jpg&#39; /&gt;</description>
-<pubDate>Wed, 08 May 2013 00:00:00 +1200</pubDate>
+&lt;img class='fit' src='http://i.imgur.com/s5ZmXANl.jpg' /&gt;</description>
+<pubDate>Wed, 08 May 2013 00:00:00 +1000</pubDate>
 <link>http://kiirani.com//2013/05/08/i-have-a-degree.html</link>
 <guid isPermaLink="true">http://kiirani.com//2013/05/08/i-have-a-degree.html</guid>
 </item>
 
 <item>
 <title>My local church discusses God, Gay marriage</title>
-<description>&lt;img class=&#39;right&#39; src=&#39;http://i.imgur.com/sdRD8AP.jpg&#39; /&gt;
+<description>&lt;img class='right' src='http://i.imgur.com/sdRD8AP.jpg' /&gt;
 &lt;p&gt;Blasphemy ensues.&lt;/p&gt;
 
 &lt;p&gt;St Matthew in the City is my local Anglican church. Local as in one block down the road.&lt;/p&gt;
 
 &lt;p&gt;I like to classify myself as an anti-theist, but I have huge amounts of respect for St Matthew&amp;#8217;s for their classy sense of humour and progressive attitude. It&amp;#8217;s also a very pretty church, architecturally speaking.&lt;/p&gt;
 
-&lt;p&gt;St Matthew&amp;#8217;s is &lt;a href=&#39;http://www.trademe.co.nz/Browse/Listing.aspx?id=585610950&#39;&gt;auctioning their current billboard&lt;/a&gt;, which commemorates the marriage equality bill, on trademe.&lt;/p&gt;
+&lt;p&gt;St Matthew&amp;#8217;s is &lt;a href='http://www.trademe.co.nz/Browse/Listing.aspx?id=585610950'&gt;auctioning their current billboard&lt;/a&gt;, which commemorates the marriage equality bill, on trademe.&lt;/p&gt;
 
 &lt;p&gt;The Q&amp;amp;A on the auction is hilarious.&lt;/p&gt;
-&lt;iframe class=&#39;imgur-album&#39; frameborder=&#39;0&#39; height=&#39;400px&#39; src=&#39;http://imgur.com/a/bHGi4/embed&#39; width=&#39;100%&#39;&gt; &lt;/iframe&gt;
+&lt;iframe class='imgur-album' frameborder='0' height='400px' src='http://imgur.com/a/bHGi4/embed' width='100%'&gt; &lt;/iframe&gt;
 &lt;p&gt;&amp;#160;&lt;/p&gt;</description>
-<pubDate>Sat, 27 Apr 2013 00:00:00 +1200</pubDate>
+<pubDate>Sat, 27 Apr 2013 00:00:00 +1000</pubDate>
 <link>http://kiirani.com//2013/04/27/stmatthews.html</link>
 <guid isPermaLink="true">http://kiirani.com//2013/04/27/stmatthews.html</guid>
 </item>
@@ -178,12 +206,12 @@ Page 1 of 13
 &lt;blockquote&gt;
 sugersm um wmcwankhmsmu n
 
-mm, may k,mvnImq.\-nyv&#39;r1nunr pcv:mclc&quot;s mnsmmsluv uu5|t.eqweu\\me&#39;v
+mm, may k,mvnImq.\-nyv'r1nunr pcv:mclc&quot;s mnsmmsluv uu5|t.eqweu\\me'v
 mivvr ucnk‘ lm cenlmsu hcv We r_ mu; M. ZIVEV Var‘ wharwuh
 &lt;/blockquote&gt;
 &lt;p&gt;Why? Well, because the TIFF file is barely readable.&lt;/p&gt;
 
-&lt;p&gt;There&amp;#8217;s one last piece of wisdom here - the &lt;a href=&#39;http://www.imagemagick.org/script/command-line-options.php#density&#39;&gt;standard resolution&lt;/a&gt; for &amp;#8220;convert&amp;#8221; is 72dpi.&lt;/p&gt;
+&lt;p&gt;There&amp;#8217;s one last piece of wisdom here - the &lt;a href='http://www.imagemagick.org/script/command-line-options.php#density'&gt;standard resolution&lt;/a&gt; for &amp;#8220;convert&amp;#8221; is 72dpi.&lt;/p&gt;
 
 &lt;p&gt;If we re-convert that at 300dpi, the result&amp;#8230; actually comes out in English. Mostly.&lt;/p&gt;
 
@@ -201,7 +229,7 @@ mivvr ucnk‘ lm cenlmsu hcv We r_ mu; M. ZIVEV Var‘ wharwuh
 &lt;/ol&gt;
 
 &lt;p&gt;And all of that took about a half hour to work out.&lt;/p&gt;</description>
-<pubDate>Fri, 22 Mar 2013 00:00:00 +1300</pubDate>
+<pubDate>Fri, 22 Mar 2013 00:00:00 +1100</pubDate>
 <link>http://kiirani.com//2013/03/22/tesseract-pdf.html</link>
 <guid isPermaLink="true">http://kiirani.com//2013/03/22/tesseract-pdf.html</guid>
 </item>
@@ -217,7 +245,7 @@ mivvr ucnk‘ lm cenlmsu hcv We r_ mu; M. ZIVEV Var‘ wharwuh
 &lt;p&gt;Manage some semblance of exhaustion by 6am&amp;#8230; Maybe enough to drop off before 7&amp;#8230; I can&amp;#8217;t afford to wake up at one in the afternoon after only 6 hours of sleep&amp;#8230; again&amp;#8230;&lt;/p&gt;
 
 &lt;p&gt;I like to think I&amp;#8217;m having trouble sleeping because I&amp;#8217;m stressed, but then lorazepam, glorious cure of anxiety and creator of unconsciousness, lorazepam doesn&amp;#8217;t work. I don&amp;#8217;t know how to deal with this.&lt;/p&gt;</description>
-<pubDate>Wed, 20 Mar 2013 00:00:00 +1300</pubDate>
+<pubDate>Wed, 20 Mar 2013 00:00:00 +1100</pubDate>
 <link>http://kiirani.com//2013/03/20/insomnia.html</link>
 <guid isPermaLink="true">http://kiirani.com//2013/03/20/insomnia.html</guid>
 </item>
@@ -245,7 +273,7 @@ missing dependency for workrave : gtkmm3
 missing dependency for workrave : python2-cheetah&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Fortunately this is pretty easily cleaned up with a little bit of commandline magic We can cut this at &amp;#8221;:&amp;#8221;, grab the second half, and then trim off the leading whitespace.&lt;/p&gt;
-&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;bash&#39;&gt;&lt;span class=&#39;c&#39;&gt;# testdb | cut -d: -f2 | sed s&amp;quot;/ //g&amp;quot;  &lt;/span&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;&lt;span class='c'&gt;# testdb | cut -d: -f2 | sed s&amp;quot;/ //g&amp;quot;  &lt;/span&gt;
 openshadinglanguage
 ibus
 lib32-libdrm
@@ -257,19 +285,19 @@ gtkmm3
 python2-cheetah
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This list can then be piped into pacman :&lt;/p&gt;
-&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;bash&#39;&gt;&lt;span class=&#39;c&#39;&gt;# testdb | cut -d: -f2 | sed s&amp;quot;/ //g&amp;quot; | pacman -S -&lt;/span&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;&lt;span class='c'&gt;# testdb | cut -d: -f2 | sed s&amp;quot;/ //g&amp;quot; | pacman -S -&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;But for me, this doesn&amp;#8217;t end here.&lt;/p&gt;
 
 &lt;p&gt;The reason I ran an -Sdd in the first place was I have some weird dependency conflicts between mesa-libgl and my nvidia drivers, and I can&amp;#8217;t be bothered fixing those right now.&lt;/p&gt;
 
 &lt;p&gt;I could do a basic &lt;code&gt;| grep -v &amp;quot;mesa-libgl&amp;quot;&lt;/code&gt;, but I thought it would be nice to go through each package and check that it and its dependencies won&amp;#8217;t cause me any problems&lt;/p&gt;
-&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;bash&#39;&gt;&lt;span class=&#39;k&#39;&gt;for &lt;/span&gt;line in &lt;span class=&#39;sb&#39;&gt;`&lt;/span&gt;testdb | cut -d: -f2 | sed s&lt;span class=&#39;s2&#39;&gt;&amp;quot;/ //g&amp;quot;&lt;/span&gt;&lt;span class=&#39;sb&#39;&gt;`&lt;/span&gt;; &lt;span class=&#39;k&#39;&gt;do &lt;/span&gt;
-&lt;span class=&#39;k&#39;&gt;    &lt;/span&gt;pacman -S &lt;span class=&#39;nv&#39;&gt;$line&lt;/span&gt;
-&lt;span class=&#39;k&#39;&gt;done&lt;/span&gt;;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;&lt;span class='k'&gt;for &lt;/span&gt;line in &lt;span class='sb'&gt;`&lt;/span&gt;testdb | cut -d: -f2 | sed s&lt;span class='s2'&gt;&amp;quot;/ //g&amp;quot;&lt;/span&gt;&lt;span class='sb'&gt;`&lt;/span&gt;; &lt;span class='k'&gt;do &lt;/span&gt;
+&lt;span class='k'&gt;    &lt;/span&gt;pacman -S &lt;span class='nv'&gt;$line&lt;/span&gt;
+&lt;span class='k'&gt;done&lt;/span&gt;;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Okay, so, I&amp;#8217;m still left in dependency hell with libgl, but most of my system functions and my bash-fu is stronger.&lt;/p&gt;</description>
-<pubDate>Mon, 18 Mar 2013 00:00:00 +1300</pubDate>
+<pubDate>Mon, 18 Mar 2013 00:00:00 +1100</pubDate>
 <link>http://kiirani.com//2013/03/18/pacman-dependencies.html</link>
 <guid isPermaLink="true">http://kiirani.com//2013/03/18/pacman-dependencies.html</guid>
 </item>
@@ -281,28 +309,28 @@ python2-cheetah
 &lt;p&gt;My first mistake was going into my main configuration to try and track this down.&lt;br /&gt; My second mistake was reading the comments I&amp;#8217;ve left in this file.&lt;/p&gt;
 
 &lt;p&gt;I think it might be time to consider reconfiguring apache.&lt;/p&gt;
-&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;bash&#39;&gt;&lt;span class=&#39;c&#39;&gt;# Wtf? This is redundant..&lt;/span&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;&lt;span class='c'&gt;# Wtf? This is redundant..&lt;/span&gt;
 
-&lt;span class=&#39;c&#39;&gt;# This is going to get in the way in later life :)&lt;/span&gt;
+&lt;span class='c'&gt;# This is going to get in the way in later life :)&lt;/span&gt;
 
-&lt;span class=&#39;c&#39;&gt;# For compatibility with my old setup&lt;/span&gt;
-&lt;span class=&#39;c&#39;&gt;# Needs to be changed lol&lt;/span&gt;
+&lt;span class='c'&gt;# For compatibility with my old setup&lt;/span&gt;
+&lt;span class='c'&gt;# Needs to be changed lol&lt;/span&gt;
 
-&lt;span class=&#39;c&#39;&gt;# Icons for apache generated pages. Should be replaced soon&lt;/span&gt;
+&lt;span class='c'&gt;# Icons for apache generated pages. Should be replaced soon&lt;/span&gt;
 
-&lt;span class=&#39;c&#39;&gt;# For the love of god, turn this down after use&lt;/span&gt;
+&lt;span class='c'&gt;# For the love of god, turn this down after use&lt;/span&gt;
 
-&lt;span class=&#39;c&#39;&gt;# Rewrite rules SHOULD go into .htaccess files, but nvm for now&lt;/span&gt;
+&lt;span class='c'&gt;# Rewrite rules SHOULD go into .htaccess files, but nvm for now&lt;/span&gt;
 
-&lt;span class=&#39;c&#39;&gt;# Commented until I can migrate script to modern python&lt;/span&gt;
+&lt;span class='c'&gt;# Commented until I can migrate script to modern python&lt;/span&gt;
 
-&lt;span class=&#39;c&#39;&gt;# Should php ever break...&lt;/span&gt;
+&lt;span class='c'&gt;# Should php ever break...&lt;/span&gt;
 
-&lt;span class=&#39;c&#39;&gt;# More magic?&lt;/span&gt;
+&lt;span class='c'&gt;# More magic?&lt;/span&gt;
 
-&lt;span class=&#39;c&#39;&gt;# Indexes are globally disabled, but oh well, need to configure somewhere.&lt;/span&gt;
+&lt;span class='c'&gt;# Indexes are globally disabled, but oh well, need to configure somewhere.&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-<pubDate>Sat, 16 Mar 2013 00:00:00 +1300</pubDate>
+<pubDate>Sat, 16 Mar 2013 00:00:00 +1100</pubDate>
 <link>http://kiirani.com//2013/03/16/bad-comments-are-bad.html</link>
 <guid isPermaLink="true">http://kiirani.com//2013/03/16/bad-comments-are-bad.html</guid>
 </item>
@@ -318,22 +346,14 @@ python2-cheetah
 &lt;p&gt;2) I&amp;#8217;ve got a pile of explicitly installed packages which are not in the package repositories&lt;/p&gt;
 
 &lt;p&gt;The solution to problem number one under arch is a simple pacman -S $(pacman -Qq). Easy as.&lt;br /&gt; Of course, all of the packages from problem number two get in the way of this. There&amp;#8217;s no clear way around the problem, so here&amp;#8217;s some text processing fun:&lt;/p&gt;
-&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;bash&#39;&gt;&lt;span class=&#39;c&#39;&gt;# pacman -Qq &amp;gt; all&lt;/span&gt;
-&lt;span class=&#39;c&#39;&gt;# pacman -Qm | cut -d\  -f 1 &amp;gt; bad&lt;/span&gt;
-&lt;span class=&#39;c&#39;&gt;# grep -vf bad all &amp;gt; good&lt;/span&gt;
-&lt;span class=&#39;c&#39;&gt;# pacman -S - &amp;lt; good&lt;/span&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;&lt;span class='c'&gt;# pacman -Qq &amp;gt; all&lt;/span&gt;
+&lt;span class='c'&gt;# pacman -Qm | cut -d\  -f 1 &amp;gt; bad&lt;/span&gt;
+&lt;span class='c'&gt;# grep -vf bad all &amp;gt; good&lt;/span&gt;
+&lt;span class='c'&gt;# pacman -S - &amp;lt; good&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-<pubDate>Mon, 16 Jul 2012 00:00:00 +1200</pubDate>
+<pubDate>Mon, 16 Jul 2012 00:00:00 +1000</pubDate>
 <link>http://kiirani.com//2012/07/16/cli-package-list-processing.html</link>
 <guid isPermaLink="true">http://kiirani.com//2012/07/16/cli-package-list-processing.html</guid>
-</item>
-
-<item>
-<title>and today's question is</title>
-<description>&lt;p&gt;&lt;strong&gt;Why&lt;/strong&gt; does a text field (input type=&amp;#8221;text&amp;#8221;) have a &amp;#8220;checked&amp;#8221; property?&lt;/p&gt;</description>
-<pubDate>Thu, 28 Jun 2012 00:00:00 +1200</pubDate>
-<link>http://kiirani.com//2012/06/28/todays-question.html</link>
-<guid isPermaLink="true">http://kiirani.com//2012/06/28/todays-question.html</guid>
 </item>
 
 </channel>
