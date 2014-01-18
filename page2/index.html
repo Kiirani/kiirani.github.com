@@ -29,12 +29,12 @@
 		
 		
 		
+		<li> <a href="/index.html">blag</a> </li>
+		
 		
 	
 		
 		
-		
-		<li> <a href="/about.html">about</a> </li>
 		
 		
 	
@@ -48,13 +48,18 @@
 		
 		
 		
-		<li> <a href="/index.html">blag</a> </li>
+		<li> <a href="/about.html">about</a> </li>
 		
 		
 	
 		
 		
 	
+		
+		
+	
+		
+		
 		
 		
 	
@@ -162,6 +167,35 @@
 
 
 <section id="posts">
+
+
+<article class="post">
+	<header>
+		<h2> <a href="/2013/04/27/stmatthews.html">My local church discusses God, Gay marriage</a> </h2>
+		<span>posted 27 April 2013</span>
+	</header>
+
+	<img class='right' src='http://i.imgur.com/sdRD8AP.jpg' />
+<p>Blasphemy ensues.</p>
+
+<p>St Matthew in the City is my local Anglican church. Local as in one block down the road.</p>
+
+<p>I like to classify myself as an anti-theist, but I have huge amounts of respect for St Matthew&#8217;s for their classy sense of humour and progressive attitude. It&#8217;s also a very pretty church, architecturally speaking.</p>
+
+<p>St Matthew&#8217;s is <a href='http://www.trademe.co.nz/Browse/Listing.aspx?id=585610950'>auctioning their current billboard</a>, which commemorates the marriage equality bill, on trademe.</p>
+
+<p>The Q&amp;A on the auction is hilarious.</p>
+<iframe class='imgur-album' frameborder='0' height='400px' src='http://imgur.com/a/bHGi4/embed' width='100%'> </iframe>
+<p>&#160;</p>
+
+	<footer>
+	<p>
+		tags: <span class="tags"><a href="/tag/funny.html" rel="tag">funny</a></span>
+		<a class="commentsLink"  href="/2013/04/27/stmatthews.html#disqus_thread">view comments</a>
+	</p>
+	</footer>
+</article>
+
 
 
 <article class="post">
@@ -378,37 +412,6 @@ python2-cheetah
 	<p>
 		tags: <span class="tags"></span>
 		<a class="commentsLink"  href="/2013/03/16/bad-comments-are-bad.html#disqus_thread">view comments</a>
-	</p>
-	</footer>
-</article>
-
-
-
-<article class="post">
-	<header>
-		<h2> <a href="/2012/07/16/cli-package-list-processing.html">Some commandline package list processing</a> </h2>
-		<span>posted 16 July 2012</span>
-	</header>
-
-	<p>This seems to come up a lot for me. I&#8217;m sure I&#8217;m the only person in the world, though.</p>
-
-<p>I have two problems:</p>
-
-<p>1) Every now and then, I get the urge to reinstall (nearly) every package on my system</p>
-
-<p>2) I&#8217;ve got a pile of explicitly installed packages which are not in the package repositories</p>
-
-<p>The solution to problem number one under arch is a simple pacman -S $(pacman -Qq). Easy as.<br /> Of course, all of the packages from problem number two get in the way of this. There&#8217;s no clear way around the problem, so here&#8217;s some text processing fun:</p>
-<div class='highlight'><pre><code class='bash'><span class='c'># pacman -Qq &gt; all</span>
-<span class='c'># pacman -Qm | cut -d\  -f 1 &gt; bad</span>
-<span class='c'># grep -vf bad all &gt; good</span>
-<span class='c'># pacman -S - &lt; good</span>
-</code></pre></div>
-
-	<footer>
-	<p>
-		tags: <span class="tags"><a href="/tag/bash.html" rel="tag">bash</a>, <a href="/tag/arch.html" rel="tag">arch</a>, <a href="/tag/pacman.html" rel="tag">pacman</a></span>
-		<a class="commentsLink"  href="/2012/07/16/cli-package-list-processing.html#disqus_thread">view comments</a>
 	</p>
 	</footer>
 </article>

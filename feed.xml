@@ -8,6 +8,34 @@
 <atom:link href="http://kiirani.com//feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>I am bad at updating website</title>
+<description>&lt;p&gt;It&amp;#8217;s been nearly five months since my zero faithful blag readers have heard from me. HELLO FAITHFUL READERS.&lt;/p&gt;
+
+&lt;p&gt;I guess I&amp;#8217;ve been a bit too busy with work, travel, and work to update.&lt;/p&gt;
+
+&lt;p&gt;This site runs Jekyll and I recall that at some point I migrated from vanilla github pages Jekyll to one of those two-branch solutions where I compile the page myself before pushing to master, ensuring that I can actually use 3rd party plugins.&lt;/p&gt;
+
+&lt;p&gt;I loaded it up today wondering how on earth I was going to remember how to deploy my site to actually publish this post. Then I looked at my &lt;a href=&#39;https://github.com/Kiirani/kiirani.github.com/blob/dev/Rakefile&#39;&gt;Rakefile&lt;/a&gt;. I love finding out that I planned ahead&amp;#8230; if only I could remember where I stole half of it from&amp;#8230;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ rake publish &amp;amp;&amp;amp; git push --all&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Thanks, past me!&lt;/p&gt;
+
+&lt;p&gt;Anyway.&lt;/p&gt;
+
+&lt;p&gt;I could give a long talk about everything I&amp;#8217;ve done since I moved in in August, but it turns out I have photos:&lt;/p&gt;
+&lt;iframe class=&#39;imgur-album&#39; frameborder=&#39;0&#39; height=&#39;550&#39; src=&#39;http://imgur.com/a/oHKPO/embed&#39; width=&#39;100%&#39;&gt; &lt;/iframe&gt;
+&lt;p&gt;I&amp;#8217;m used to the fact that I live in Sydney now. Work is going well, I&amp;#8217;m settled into my apartment and lifestyle.&lt;/p&gt;
+
+&lt;p&gt;I still miss my friends and family. I miss my boyfriend, who won&amp;#8217;t move here until July. Mostly life is awesome, I think being a little lonely for a while is the universe trying to keep me balanced.&lt;/p&gt;
+
+&lt;p&gt;&amp;#160;&lt;/p&gt;</description>
+<pubDate>Sat, 18 Jan 2014 00:00:00 +1100</pubDate>
+<link>http://kiirani.com//2014/01/18/life-since-august.html</link>
+<guid isPermaLink="true">http://kiirani.com//2014/01/18/life-since-august.html</guid>
+</item>
+
+<item>
 <title>Updates from Sydney</title>
 <description>&lt;p&gt;Today I signed the tenancy agreement for my new apartment. It&amp;#8217;s gorgeous &amp;#8212; a sunny little studio at the city end of Glebe, with a raised partition for the bedroom hidden behind a half wall. The walls are covered with artwork: silhouettes of birds, leaves, trees. I&amp;#8217;m in love.&lt;/p&gt;
 
@@ -59,7 +87,7 @@
 
 &lt;p&gt;Including myself.&lt;br /&gt; I got here yesterday afternoon, with my things and my computer. Setting that up is doublepluspriority, because I need to use it to work on Monday.&lt;/p&gt;
 
-&lt;h3 id='internet_hell_problem_1'&gt;Internet Hell: Problem 1&lt;/h3&gt;
+&lt;h3 id=&#39;internet_hell_problem_1&#39;&gt;Internet Hell: Problem 1&lt;/h3&gt;
 
 &lt;p&gt;Enter Internet Satan, stage left.&lt;/p&gt;
 
@@ -71,7 +99,7 @@
 
 &lt;p&gt;Installed the netgear as the primary router &amp;amp; wireless AP for the house. PS3 and android phone connecting successfully; desktop? Not so much.&lt;/p&gt;
 
-&lt;h3 id='internet_hell_problem_2'&gt;Internet Hell: Problem 2&lt;/h3&gt;
+&lt;h3 id=&#39;internet_hell_problem_2&#39;&gt;Internet Hell: Problem 2&lt;/h3&gt;
 
 &lt;p&gt;So I&amp;#8217;ve got a decent enough wireless signal now and I go to connect with the desktop machine.&lt;/p&gt;
 
@@ -79,7 +107,7 @@
 
 &lt;p&gt;Meanwhile sudo -i no longer works&amp;#8230; In fact sudo anything just hangs, and I can&amp;#8217;t connect to my local mpd server anymore either.&lt;/p&gt;
 
-&lt;p&gt;(&lt;a href='http://serverfault.com/a/65373'&gt;Corrupt routing tables?&lt;/a&gt; sure, why not&amp;#8230; I&amp;#8217;m too lazy to go back and diagnose the exact mechanism by which the wireless adapter was screwing up my machine)&lt;/p&gt;
+&lt;p&gt;(&lt;a href=&#39;http://serverfault.com/a/65373&#39;&gt;Corrupt routing tables?&lt;/a&gt; sure, why not&amp;#8230; I&amp;#8217;m too lazy to go back and diagnose the exact mechanism by which the wireless adapter was screwing up my machine)&lt;/p&gt;
 
 &lt;p&gt;I shut down the machine and that hangs too, trying to shut off apache, ntpd and samba. Out of frustration I try booting into windows.&lt;/p&gt;
 
@@ -91,7 +119,7 @@
 
 &lt;p&gt;It&amp;#8217;s sleep time, so I&amp;#8217;ll research a new one in the morning.&lt;/p&gt;
 
-&lt;h3 id='internet_hell_problem_3'&gt;Internet Hell: Problem 3&lt;/h3&gt;
+&lt;h3 id=&#39;internet_hell_problem_3&#39;&gt;Internet Hell: Problem 3&lt;/h3&gt;
 
 &lt;p&gt;Hopped out of bed this morning and straight onto my laptop to see what I can get in the market of USB wifi dongles, in person, on a Sunday afternoon. In New Zealand. Heh.&lt;/p&gt;
 
@@ -99,15 +127,15 @@
 
 &lt;p&gt;Dying on me as in, the laptop still thinks I&amp;#8217;m connected, the router&amp;#8217;s still taking new connections, but &lt;strong&gt;nothing works anymore.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Okay so this one was just &lt;a href='http://unix.stackexchange.com/a/38145'&gt;interference from another local wireless network&lt;/a&gt;. Changed channel, everything&amp;#8217;s fine.&lt;/p&gt;
+&lt;p&gt;Okay so this one was just &lt;a href=&#39;http://unix.stackexchange.com/a/38145&#39;&gt;interference from another local wireless network&lt;/a&gt;. Changed channel, everything&amp;#8217;s fine.&lt;/p&gt;
 
-&lt;h3 id='internet_hell_problem_4'&gt;Internet Hell: Problem 4&lt;/h3&gt;
+&lt;h3 id=&#39;internet_hell_problem_4&#39;&gt;Internet Hell: Problem 4&lt;/h3&gt;
 
 &lt;p&gt;&lt;em&gt;Hysterical Laughter&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;I went down to pbtech and picked up another asus wifi dongle.&lt;/p&gt;
 
-&lt;p&gt;I don&amp;#8217;t know why I got another one of these; &lt;strong&gt;the one that just broke is an asus usb-n13, and the drivers for it &lt;a href='https://bbs.archlinux.org/viewtopic.php?pid=1124701'&gt;cause kernel panics&lt;/a&gt; in kernels &amp;gt; 3.3&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I don&amp;#8217;t know why I got another one of these; &lt;strong&gt;the one that just broke is an asus usb-n13, and the drivers for it &lt;a href=&#39;https://bbs.archlinux.org/viewtopic.php?pid=1124701&#39;&gt;cause kernel panics&lt;/a&gt; in kernels &amp;gt; 3.3&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;I think I&amp;#8217;m just a sucker for wireless cards that come with a linux driver on a disc in the box, so I don&amp;#8217;t have to run a twenty metre cable to the box to download drivers.&lt;/p&gt;
 
@@ -130,7 +158,7 @@
 &lt;p&gt;Not thrilled or anything like that.&lt;/p&gt;
 
 &lt;p&gt;Here&amp;#8217;s me in my pretty pretty regalia :)&lt;/p&gt;
-&lt;img class='fit' src='http://i.imgur.com/s5ZmXANl.jpg' /&gt;</description>
+&lt;img class=&#39;fit&#39; src=&#39;http://i.imgur.com/s5ZmXANl.jpg&#39; /&gt;</description>
 <pubDate>Wed, 08 May 2013 00:00:00 +1000</pubDate>
 <link>http://kiirani.com//2013/05/08/i-have-a-degree.html</link>
 <guid isPermaLink="true">http://kiirani.com//2013/05/08/i-have-a-degree.html</guid>
@@ -138,17 +166,17 @@
 
 <item>
 <title>My local church discusses God, Gay marriage</title>
-<description>&lt;img class='right' src='http://i.imgur.com/sdRD8AP.jpg' /&gt;
+<description>&lt;img class=&#39;right&#39; src=&#39;http://i.imgur.com/sdRD8AP.jpg&#39; /&gt;
 &lt;p&gt;Blasphemy ensues.&lt;/p&gt;
 
 &lt;p&gt;St Matthew in the City is my local Anglican church. Local as in one block down the road.&lt;/p&gt;
 
 &lt;p&gt;I like to classify myself as an anti-theist, but I have huge amounts of respect for St Matthew&amp;#8217;s for their classy sense of humour and progressive attitude. It&amp;#8217;s also a very pretty church, architecturally speaking.&lt;/p&gt;
 
-&lt;p&gt;St Matthew&amp;#8217;s is &lt;a href='http://www.trademe.co.nz/Browse/Listing.aspx?id=585610950'&gt;auctioning their current billboard&lt;/a&gt;, which commemorates the marriage equality bill, on trademe.&lt;/p&gt;
+&lt;p&gt;St Matthew&amp;#8217;s is &lt;a href=&#39;http://www.trademe.co.nz/Browse/Listing.aspx?id=585610950&#39;&gt;auctioning their current billboard&lt;/a&gt;, which commemorates the marriage equality bill, on trademe.&lt;/p&gt;
 
 &lt;p&gt;The Q&amp;amp;A on the auction is hilarious.&lt;/p&gt;
-&lt;iframe class='imgur-album' frameborder='0' height='400px' src='http://imgur.com/a/bHGi4/embed' width='100%'&gt; &lt;/iframe&gt;
+&lt;iframe class=&#39;imgur-album&#39; frameborder=&#39;0&#39; height=&#39;400px&#39; src=&#39;http://imgur.com/a/bHGi4/embed&#39; width=&#39;100%&#39;&gt; &lt;/iframe&gt;
 &lt;p&gt;&amp;#160;&lt;/p&gt;</description>
 <pubDate>Sat, 27 Apr 2013 00:00:00 +1000</pubDate>
 <link>http://kiirani.com//2013/04/27/stmatthews.html</link>
@@ -206,12 +234,12 @@ Page 1 of 13
 &lt;blockquote&gt;
 sugersm um wmcwankhmsmu n
 
-mm, may k,mvnImq.\-nyv'r1nunr pcv:mclc&quot;s mnsmmsluv uu5|t.eqweu\\me'v
+mm, may k,mvnImq.\-nyv&#39;r1nunr pcv:mclc&quot;s mnsmmsluv uu5|t.eqweu\\me&#39;v
 mivvr ucnk‘ lm cenlmsu hcv We r_ mu; M. ZIVEV Var‘ wharwuh
 &lt;/blockquote&gt;
 &lt;p&gt;Why? Well, because the TIFF file is barely readable.&lt;/p&gt;
 
-&lt;p&gt;There&amp;#8217;s one last piece of wisdom here - the &lt;a href='http://www.imagemagick.org/script/command-line-options.php#density'&gt;standard resolution&lt;/a&gt; for &amp;#8220;convert&amp;#8221; is 72dpi.&lt;/p&gt;
+&lt;p&gt;There&amp;#8217;s one last piece of wisdom here - the &lt;a href=&#39;http://www.imagemagick.org/script/command-line-options.php#density&#39;&gt;standard resolution&lt;/a&gt; for &amp;#8220;convert&amp;#8221; is 72dpi.&lt;/p&gt;
 
 &lt;p&gt;If we re-convert that at 300dpi, the result&amp;#8230; actually comes out in English. Mostly.&lt;/p&gt;
 
@@ -273,7 +301,7 @@ missing dependency for workrave : gtkmm3
 missing dependency for workrave : python2-cheetah&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Fortunately this is pretty easily cleaned up with a little bit of commandline magic We can cut this at &amp;#8221;:&amp;#8221;, grab the second half, and then trim off the leading whitespace.&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;&lt;span class='c'&gt;# testdb | cut -d: -f2 | sed s&amp;quot;/ //g&amp;quot;  &lt;/span&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;bash&#39;&gt;&lt;span class=&#39;c&#39;&gt;# testdb | cut -d: -f2 | sed s&amp;quot;/ //g&amp;quot;  &lt;/span&gt;
 openshadinglanguage
 ibus
 lib32-libdrm
@@ -285,16 +313,16 @@ gtkmm3
 python2-cheetah
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;This list can then be piped into pacman :&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;&lt;span class='c'&gt;# testdb | cut -d: -f2 | sed s&amp;quot;/ //g&amp;quot; | pacman -S -&lt;/span&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;bash&#39;&gt;&lt;span class=&#39;c&#39;&gt;# testdb | cut -d: -f2 | sed s&amp;quot;/ //g&amp;quot; | pacman -S -&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;But for me, this doesn&amp;#8217;t end here.&lt;/p&gt;
 
 &lt;p&gt;The reason I ran an -Sdd in the first place was I have some weird dependency conflicts between mesa-libgl and my nvidia drivers, and I can&amp;#8217;t be bothered fixing those right now.&lt;/p&gt;
 
 &lt;p&gt;I could do a basic &lt;code&gt;| grep -v &amp;quot;mesa-libgl&amp;quot;&lt;/code&gt;, but I thought it would be nice to go through each package and check that it and its dependencies won&amp;#8217;t cause me any problems&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;&lt;span class='k'&gt;for &lt;/span&gt;line in &lt;span class='sb'&gt;`&lt;/span&gt;testdb | cut -d: -f2 | sed s&lt;span class='s2'&gt;&amp;quot;/ //g&amp;quot;&lt;/span&gt;&lt;span class='sb'&gt;`&lt;/span&gt;; &lt;span class='k'&gt;do &lt;/span&gt;
-&lt;span class='k'&gt;    &lt;/span&gt;pacman -S &lt;span class='nv'&gt;$line&lt;/span&gt;
-&lt;span class='k'&gt;done&lt;/span&gt;;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;bash&#39;&gt;&lt;span class=&#39;k&#39;&gt;for &lt;/span&gt;line in &lt;span class=&#39;sb&#39;&gt;`&lt;/span&gt;testdb | cut -d: -f2 | sed s&lt;span class=&#39;s2&#39;&gt;&amp;quot;/ //g&amp;quot;&lt;/span&gt;&lt;span class=&#39;sb&#39;&gt;`&lt;/span&gt;; &lt;span class=&#39;k&#39;&gt;do &lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;    &lt;/span&gt;pacman -S &lt;span class=&#39;nv&#39;&gt;$line&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;done&lt;/span&gt;;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Okay, so, I&amp;#8217;m still left in dependency hell with libgl, but most of my system functions and my bash-fu is stronger.&lt;/p&gt;</description>
 <pubDate>Mon, 18 Mar 2013 00:00:00 +1100</pubDate>
@@ -309,51 +337,30 @@ python2-cheetah
 &lt;p&gt;My first mistake was going into my main configuration to try and track this down.&lt;br /&gt; My second mistake was reading the comments I&amp;#8217;ve left in this file.&lt;/p&gt;
 
 &lt;p&gt;I think it might be time to consider reconfiguring apache.&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;&lt;span class='c'&gt;# Wtf? This is redundant..&lt;/span&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;bash&#39;&gt;&lt;span class=&#39;c&#39;&gt;# Wtf? This is redundant..&lt;/span&gt;
 
-&lt;span class='c'&gt;# This is going to get in the way in later life :)&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;# This is going to get in the way in later life :)&lt;/span&gt;
 
-&lt;span class='c'&gt;# For compatibility with my old setup&lt;/span&gt;
-&lt;span class='c'&gt;# Needs to be changed lol&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;# For compatibility with my old setup&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;# Needs to be changed lol&lt;/span&gt;
 
-&lt;span class='c'&gt;# Icons for apache generated pages. Should be replaced soon&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;# Icons for apache generated pages. Should be replaced soon&lt;/span&gt;
 
-&lt;span class='c'&gt;# For the love of god, turn this down after use&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;# For the love of god, turn this down after use&lt;/span&gt;
 
-&lt;span class='c'&gt;# Rewrite rules SHOULD go into .htaccess files, but nvm for now&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;# Rewrite rules SHOULD go into .htaccess files, but nvm for now&lt;/span&gt;
 
-&lt;span class='c'&gt;# Commented until I can migrate script to modern python&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;# Commented until I can migrate script to modern python&lt;/span&gt;
 
-&lt;span class='c'&gt;# Should php ever break...&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;# Should php ever break...&lt;/span&gt;
 
-&lt;span class='c'&gt;# More magic?&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;# More magic?&lt;/span&gt;
 
-&lt;span class='c'&gt;# Indexes are globally disabled, but oh well, need to configure somewhere.&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;# Indexes are globally disabled, but oh well, need to configure somewhere.&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
 <pubDate>Sat, 16 Mar 2013 00:00:00 +1100</pubDate>
 <link>http://kiirani.com//2013/03/16/bad-comments-are-bad.html</link>
 <guid isPermaLink="true">http://kiirani.com//2013/03/16/bad-comments-are-bad.html</guid>
-</item>
-
-<item>
-<title>Some commandline package list processing</title>
-<description>&lt;p&gt;This seems to come up a lot for me. I&amp;#8217;m sure I&amp;#8217;m the only person in the world, though.&lt;/p&gt;
-
-&lt;p&gt;I have two problems:&lt;/p&gt;
-
-&lt;p&gt;1) Every now and then, I get the urge to reinstall (nearly) every package on my system&lt;/p&gt;
-
-&lt;p&gt;2) I&amp;#8217;ve got a pile of explicitly installed packages which are not in the package repositories&lt;/p&gt;
-
-&lt;p&gt;The solution to problem number one under arch is a simple pacman -S $(pacman -Qq). Easy as.&lt;br /&gt; Of course, all of the packages from problem number two get in the way of this. There&amp;#8217;s no clear way around the problem, so here&amp;#8217;s some text processing fun:&lt;/p&gt;
-&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='bash'&gt;&lt;span class='c'&gt;# pacman -Qq &amp;gt; all&lt;/span&gt;
-&lt;span class='c'&gt;# pacman -Qm | cut -d\  -f 1 &amp;gt; bad&lt;/span&gt;
-&lt;span class='c'&gt;# grep -vf bad all &amp;gt; good&lt;/span&gt;
-&lt;span class='c'&gt;# pacman -S - &amp;lt; good&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-<pubDate>Mon, 16 Jul 2012 00:00:00 +1000</pubDate>
-<link>http://kiirani.com//2012/07/16/cli-package-list-processing.html</link>
-<guid isPermaLink="true">http://kiirani.com//2012/07/16/cli-package-list-processing.html</guid>
 </item>
 
 </channel>
